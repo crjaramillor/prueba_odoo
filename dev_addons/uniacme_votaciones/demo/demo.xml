@@ -1,0 +1,94 @@
+<odoo>
+    <data noupdate="1">
+        <!-- Crear Sedes -->
+        <record id="campus_utc" model="university.campus">
+            <field name="name">Campus UTC</field>
+            <field name="country">Bélgica</field>
+            <field name="timezone">UTC</field>
+        </record>
+
+        <record id="campus_gmt5" model="university.campus">
+            <field name="name">Campus GMT-5</field>
+            <field name="country">Colombia</field>
+            <field name="timezone">GMT-5</field>
+        </record>
+
+        <record id="campus_gmt3" model="university.campus">
+            <field name="name">Campus GMT-3</field>
+            <field name="country">Argentina</field>
+            <field name="timezone">GMT-3</field>
+        </record>
+
+        <!-- Crear Estudiantes -->
+        <record id="student_1" model="university.student">
+            <field name="name">Juan Pérez</field>
+            <field name="identificacion">12345</field>
+            <field name="carrera">Ingeniería de Sistemas</field>
+            <field name="sede_id" ref="campus_utc"/>
+        </record>
+
+        <record id="student_2" model="university.student">
+            <field name="name">María González</field>
+            <field name="identificacion">67890</field>
+            <field name="carrera">Administración de Empresas</field>
+            <field name="sede_id" ref="campus_gmt5"/>
+        </record>
+
+        <record id="student_3" model="university.student">
+            <field name="name">Carlos Sánchez</field>
+            <field name="identificacion">54321</field>
+            <field name="carrera">Ciencias Políticas</field>
+            <field name="sede_id" ref="campus_gmt3"/>
+        </record>
+
+        <!-- Crear Candidatos -->
+        <record id="candidate_1" model="votaciones.candidate">
+            <field name="student_id" ref="student_1"/>
+            <field name="votes_count">0</field>
+        </record>
+
+        <record id="candidate_2" model="votaciones.candidate">
+            <field name="student_id" ref="student_2"/>
+            <field name="votes_count">0</field>
+        </record>
+
+        <record id="candidate_3" model="votaciones.candidate">
+            <field name="student_id" ref="student_3"/>
+            <field name="votes_count">0</field>
+        </record>
+
+        <!-- Crear Procesos de Votación -->
+        <record id="voting_process_1" model="university.voting">
+            <field name="name">Votación 1 - Representante Estudiantil</field>
+            <field name="description">Proceso para elegir representante estudiantil.</field>
+            <field name="start_datetime">2024-11-01 09:00:00</field>
+            <field name="end_datetime">2024-11-01 18:00:00</field>
+            <field name="sede_id" ref="campus_utc"/>
+            <field name="state">draft</field>
+            <field name="candidates_ids" eval="[(4, ref('candidate_1')), (4, ref('candidate_2'))]"/>
+        </record>
+
+        <record id="voting_process_2" model="university.voting">
+            <field name="name">Votación 2 - Mejor Proyecto</field>
+            <field name="description">Votación para elegir el mejor proyecto de investigación.</field>
+            <field name="start_datetime">2024-11-05 10:00:00</field>
+            <field name="end_datetime">2024-11-05 16:00:00</field>
+            <field name="sede_id" ref="campus_gmt5"/>
+            <field name="state">draft</field>
+            <field name="candidates_ids" eval="[(4, ref('candidate_2')), (4, ref('candidate_3'))]"/>
+        </record>
+
+        <!-- Votación Estudiantes -->
+        <record id="voting_student_1" model="voting.student">
+            <field name="voting_process_id" ref="voting_process_1"/>
+            <field name="candidate_id" ref="candidate_1"/>
+            <field name="student_id" ref="student_1"/>
+        </record>
+
+        <record id="voting_student_2" model="voting.student">
+            <field name="voting_process_id" ref="voting_process_2"/>
+            <field name="candidate_id" ref="candidate_3"/>
+            <field name="student_id" ref="student_2"/>
+        </record>
+    </data>
+</odoo>

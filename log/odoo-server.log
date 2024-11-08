@@ -1,0 +1,1212 @@
+2024-11-06 15:38:58,663 1 ERROR uniacme_votaciones odoo.sql_db: bad query: b'INSERT INTO "voting_student" ("candidate_id", "create_date", "create_uid", "id_del_votante", "voting_process_id", "write_date", "write_uid") VALUES (1, \'2024-11-06 15:38:58.663241\', 2, 12, 1, \'2024-11-06 15:38:58.663241\', 2) RETURNING "id"'
+ERROR: null value in column "student_id" of relation "voting_student" violates not-null constraint
+DETAIL:  Failing row contains (12, 1, 1, null, 2, 2, 2024-11-06 15:38:58.663241, 2024-11-06 15:38:58.663241, 12).
+ 
+2024-11-06 15:38:58,666 1 WARNING uniacme_votaciones odoo.http: The operation cannot be completed:
+- Create/update: a mandatory field is not set.
+- Delete: another model requires the record being deleted. If possible, archive it instead.
+
+Model: Proceso de Votación para Estudiantes (voting.student)
+Field: Estudiante (student_id)
+ 
+2024-11-06 15:38:58,667 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:38:58] "POST /web/dataset/call_kw/voting.student/web_save HTTP/1.1" 200 - 2 0.001 0.006
+2024-11-06 15:41:06,947 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:06] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.006
+2024-11-06 15:41:07,014 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:07] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 50 0.015 0.027
+2024-11-06 15:41:07,029 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:07] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.005
+2024-11-06 15:41:07,058 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:07] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 50 0.019 0.015
+2024-11-06 15:41:07,083 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:07] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.005 0.053
+2024-11-06 15:41:08,775 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:08] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 47 0.014 0.014
+2024-11-06 15:41:08,787 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:08] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.003
+2024-11-06 15:41:10,322 1 INFO uniacme_votaciones odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['uniacme_votaciones'] to user cristianjr1292@gmail.com #2 via 172.18.0.1 
+2024-11-06 15:41:10,323 1 INFO uniacme_votaciones odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['uniacme_votaciones'] to user cristianjr1292@gmail.com #2 via 172.18.0.1 
+2024-11-06 15:41:10,324 1 INFO uniacme_votaciones odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['uniacme_votaciones'] to user cristianjr1292@gmail.com #2 via 172.18.0.1 
+2024-11-06 15:41:10,917 1 INFO uniacme_votaciones odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user cristianjr1292@gmail.com #2 via 172.18.0.1 
+2024-11-06 15:41:10,942 1 INFO uniacme_votaciones odoo.modules.loading: loading 1 modules... 
+2024-11-06 15:41:10,949 1 INFO uniacme_votaciones odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-11-06 15:41:10,966 1 INFO uniacme_votaciones odoo.modules.loading: updating modules list 
+2024-11-06 15:41:10,967 1 INFO uniacme_votaciones odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.18.0.1 
+2024-11-06 15:41:11,546 1 INFO uniacme_votaciones odoo.modules.loading: loading 13 modules... 
+2024-11-06 15:41:11,553 1 INFO uniacme_votaciones odoo.modules.loading: Loading module uniacme_votaciones (8/13) 
+2024-11-06 15:41:11,606 1 INFO uniacme_votaciones odoo.modules.registry: module uniacme_votaciones: creating or updating database tables 
+2024-11-06 15:41:11,644 1 INFO uniacme_votaciones odoo.modules.loading: loading uniacme_votaciones/security/ir.model.access.csv 
+2024-11-06 15:41:11,661 1 INFO uniacme_votaciones odoo.modules.loading: loading uniacme_votaciones/views/views.xml 
+2024-11-06 15:41:11,744 1 INFO uniacme_votaciones odoo.modules.loading: Module uniacme_votaciones: loading demo 
+2024-11-06 15:41:11,744 1 INFO uniacme_votaciones odoo.modules.loading: loading uniacme_votaciones/demo/demo.xml 
+2024-11-06 15:41:11,769 1 INFO uniacme_votaciones odoo.modules.loading: Module uniacme_votaciones loaded in 0.22s, 276 queries (+276 other) 
+2024-11-06 15:41:11,775 1 INFO uniacme_votaciones odoo.modules.loading: 13 modules loaded in 0.23s, 276 queries (+276 extra) 
+2024-11-06 15:41:11,865 1 INFO uniacme_votaciones odoo.modules.registry: verifying fields for every extended model 
+2024-11-06 15:41:12,045 1 INFO uniacme_votaciones odoo.modules.loading: Modules loaded. 
+2024-11-06 15:41:12,049 1 INFO uniacme_votaciones odoo.modules.registry: Registry changed, signaling through the database 
+2024-11-06 15:41:12,050 1 INFO uniacme_votaciones odoo.modules.registry: Registry loaded in 1.112s 
+2024-11-06 15:41:12,051 1 INFO uniacme_votaciones odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-11-06 15:41:12,054 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:12] "POST /web/dataset/call_button/ir.module.module/button_immediate_upgrade HTTP/1.1" 200 - 3836 1.004 0.733
+2024-11-06 15:41:12,083 1 INFO uniacme_votaciones odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-11-06 15:41:12,329 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:12] "GET /odoo HTTP/1.1" 200 - 76 0.021 0.227
+2024-11-06 15:41:12,495 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:12] "GET /bus/websocket_worker_bundle?v=18.0-1 HTTP/1.1" 304 - 4 0.002 0.006
+2024-11-06 15:41:12,535 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:12] "POST /web/action/load HTTP/1.1" 200 - 11 0.008 0.009
+2024-11-06 15:41:12,535 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:12] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.007 0.011
+2024-11-06 15:41:12,535 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:12] "GET /websocket?version=18.0-1 HTTP/1.1" 101 - 1 0.001 0.005
+2024-11-06 15:41:12,570 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:12] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.005 0.004
+2024-11-06 15:41:12,581 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:12] "POST /web/dataset/call_kw/votaciones.candidate/get_views HTTP/1.1" 200 - 21 0.011 0.016
+2024-11-06 15:41:12,598 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:12] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.003
+2024-11-06 15:41:12,602 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:12] "POST /web/dataset/call_kw/votaciones.candidate/web_search_read HTTP/1.1" 200 - 6 0.003 0.006
+2024-11-06 15:41:13,761 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:13] "POST /web/action/load HTTP/1.1" 200 - 9 0.003 0.005
+2024-11-06 15:41:13,781 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:13] "POST /web/dataset/call_kw/voting.student/get_views HTTP/1.1" 200 - 8 0.003 0.006
+2024-11-06 15:41:13,794 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:13] "POST /web/dataset/call_kw/voting.student/onchange HTTP/1.1" 200 - 2 0.001 0.003
+2024-11-06 15:41:14,174 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:14] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2024-11-06 15:41:14,535 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:14] "POST /web/dataset/call_kw/university.voting/name_search HTTP/1.1" 200 - 3 0.001 0.003
+2024-11-06 15:41:18,271 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:18] "POST /web/dataset/call_kw/votaciones.candidate/name_search HTTP/1.1" 200 - 3 0.001 0.003
+2024-11-06 15:41:19,128 1 ERROR uniacme_votaciones odoo.sql_db: bad query: b'INSERT INTO "voting_student" ("candidate_id", "create_date", "create_uid", "id_del_votante", "voting_process_id", "write_date", "write_uid") VALUES (1, \'2024-11-06 15:41:19.127574\', 2, 12, 1, \'2024-11-06 15:41:19.127574\', 2) RETURNING "id"'
+ERROR: null value in column "student_id" of relation "voting_student" violates not-null constraint
+DETAIL:  Failing row contains (13, 1, 1, null, 2, 2, 2024-11-06 15:41:19.127574, 2024-11-06 15:41:19.127574, 12).
+ 
+2024-11-06 15:41:19,130 1 WARNING uniacme_votaciones odoo.http: The operation cannot be completed:
+- Create/update: a mandatory field is not set.
+- Delete: another model requires the record being deleted. If possible, archive it instead.
+
+Model: Proceso de Votación para Estudiantes (voting.student)
+Field: Estudiante (student_id)
+ 
+2024-11-06 15:41:19,131 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:41:19] "POST /web/dataset/call_kw/voting.student/web_save HTTP/1.1" 200 - 2 0.001 0.006
+2024-11-06 15:44:22,784 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:22] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.005
+2024-11-06 15:44:22,839 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:22] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 50 0.014 0.025
+2024-11-06 15:44:22,855 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:22] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.006
+2024-11-06 15:44:22,883 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:22] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 50 0.020 0.013
+2024-11-06 15:44:22,898 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:22] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.044
+2024-11-06 15:44:24,845 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:24] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 47 0.015 0.013
+2024-11-06 15:44:24,856 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:24] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.003
+2024-11-06 15:44:26,400 1 INFO uniacme_votaciones odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['uniacme_votaciones'] to user cristianjr1292@gmail.com #2 via 172.18.0.1 
+2024-11-06 15:44:26,401 1 INFO uniacme_votaciones odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['uniacme_votaciones'] to user cristianjr1292@gmail.com #2 via 172.18.0.1 
+2024-11-06 15:44:26,401 1 INFO uniacme_votaciones odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['uniacme_votaciones'] to user cristianjr1292@gmail.com #2 via 172.18.0.1 
+2024-11-06 15:44:27,015 1 INFO uniacme_votaciones odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user cristianjr1292@gmail.com #2 via 172.18.0.1 
+2024-11-06 15:44:27,045 1 INFO uniacme_votaciones odoo.modules.loading: loading 1 modules... 
+2024-11-06 15:44:27,051 1 INFO uniacme_votaciones odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-11-06 15:44:27,069 1 INFO uniacme_votaciones odoo.modules.loading: updating modules list 
+2024-11-06 15:44:27,071 1 INFO uniacme_votaciones odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.18.0.1 
+2024-11-06 15:44:27,704 1 INFO uniacme_votaciones odoo.modules.loading: loading 13 modules... 
+2024-11-06 15:44:27,707 1 INFO uniacme_votaciones odoo.modules.loading: Loading module uniacme_votaciones (8/13) 
+2024-11-06 15:44:27,748 1 INFO uniacme_votaciones odoo.modules.registry: module uniacme_votaciones: creating or updating database tables 
+2024-11-06 15:44:27,787 1 INFO uniacme_votaciones odoo.modules.loading: loading uniacme_votaciones/security/ir.model.access.csv 
+2024-11-06 15:44:27,806 1 INFO uniacme_votaciones odoo.modules.loading: loading uniacme_votaciones/views/views.xml 
+2024-11-06 15:44:27,897 1 INFO uniacme_votaciones odoo.modules.loading: Module uniacme_votaciones: loading demo 
+2024-11-06 15:44:27,898 1 INFO uniacme_votaciones odoo.modules.loading: loading uniacme_votaciones/demo/demo.xml 
+2024-11-06 15:44:27,923 1 INFO uniacme_votaciones odoo.modules.loading: Module uniacme_votaciones loaded in 0.22s, 279 queries (+279 other) 
+2024-11-06 15:44:27,929 1 INFO uniacme_votaciones odoo.modules.loading: 13 modules loaded in 0.23s, 279 queries (+279 extra) 
+2024-11-06 15:44:28,023 1 INFO uniacme_votaciones odoo.modules.registry: verifying fields for every extended model 
+2024-11-06 15:44:28,208 1 INFO uniacme_votaciones odoo.modules.loading: Modules loaded. 
+2024-11-06 15:44:28,212 1 INFO uniacme_votaciones odoo.modules.registry: Registry changed, signaling through the database 
+2024-11-06 15:44:28,214 1 INFO uniacme_votaciones odoo.modules.registry: Registry loaded in 1.173s 
+2024-11-06 15:44:28,214 1 INFO uniacme_votaciones odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-11-06 15:44:28,218 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:28] "POST /web/dataset/call_button/ir.module.module/button_immediate_upgrade HTTP/1.1" 200 - 3839 1.013 0.808
+2024-11-06 15:44:28,245 1 INFO uniacme_votaciones odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-11-06 15:44:28,502 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:28] "GET /odoo HTTP/1.1" 200 - 76 0.021 0.238
+2024-11-06 15:44:28,705 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:28] "GET /bus/websocket_worker_bundle?v=18.0-1 HTTP/1.1" 304 - 4 0.002 0.005
+2024-11-06 15:44:28,747 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:28] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.009 0.013
+2024-11-06 15:44:28,753 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:28] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.009 0.010
+2024-11-06 15:44:28,753 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:28] "POST /web/action/load HTTP/1.1" 200 - 11 0.015 0.010
+2024-11-06 15:44:28,754 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:28] "GET /websocket?version=18.0-1 HTTP/1.1" 101 - 1 0.001 0.015
+2024-11-06 15:44:28,791 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:28] "POST /web/dataset/call_kw/votaciones.candidate/get_views HTTP/1.1" 200 - 21 0.008 0.013
+2024-11-06 15:44:28,809 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:28] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.004
+2024-11-06 15:44:28,813 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:28] "POST /web/dataset/call_kw/votaciones.candidate/web_search_read HTTP/1.1" 200 - 6 0.004 0.005
+2024-11-06 15:44:29,856 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:29] "POST /web/action/load HTTP/1.1" 200 - 9 0.003 0.005
+2024-11-06 15:44:29,877 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:29] "POST /web/dataset/call_kw/voting.student/get_views HTTP/1.1" 200 - 8 0.003 0.006
+2024-11-06 15:44:29,889 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:29] "POST /web/dataset/call_kw/voting.student/onchange HTTP/1.1" 200 - 2 0.001 0.003
+2024-11-06 15:44:30,394 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:30] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2024-11-06 15:44:30,471 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:30] "POST /web/dataset/call_kw/university.voting/name_search HTTP/1.1" 200 - 3 0.001 0.003
+2024-11-06 15:44:31,230 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:31] "POST /web/dataset/call_kw/university.student/name_search HTTP/1.1" 200 - 2 0.001 0.003
+2024-11-06 15:44:33,055 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:33] "POST /web/dataset/call_kw/votaciones.candidate/name_search HTTP/1.1" 200 - 3 0.001 0.003
+2024-11-06 15:44:33,976 1 ERROR uniacme_votaciones odoo.sql_db: bad query: b'INSERT INTO "voting_student" ("candidate_id", "create_date", "create_uid", "student_id", "voting_process_id", "write_date", "write_uid") VALUES (1, \'2024-11-06 15:44:33.975614\', 2, 1, 1, \'2024-11-06 15:44:33.975614\', 2) RETURNING "id"'
+ERROR: null value in column "id_del_votante" of relation "voting_student" violates not-null constraint
+DETAIL:  Failing row contains (14, 1, 1, 1, 2, 2, 2024-11-06 15:44:33.975614, 2024-11-06 15:44:33.975614, null).
+ 
+2024-11-06 15:44:33,978 1 WARNING uniacme_votaciones odoo.http: The operation cannot be completed:
+- Create/update: a mandatory field is not set.
+- Delete: another model requires the record being deleted. If possible, archive it instead.
+
+Model: Proceso de Votación para Estudiantes (voting.student)
+Field: ID del Votante (id_del_votante)
+ 
+2024-11-06 15:44:33,979 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:44:33] "POST /web/dataset/call_kw/voting.student/web_save HTTP/1.1" 200 - 2 0.001 0.006
+2024-11-06 15:45:13,571 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-11-06 15:45:13,572 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-11-06 15:45:13,595 1 ERROR ? odoo.addons.bus.models.bus: Bus.loop error, sleep and retry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/models/bus.py", line 255, in run
+    self.loop()
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/models/bus.py", line 240, in loop
+    conn.poll()
+psycopg2.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2024-11-06 15:45:13,599 1 INFO uniacme_votaciones odoo.sql_db: Connection to the database failed 
+2024-11-06 15:45:13,600 1 WARNING uniacme_votaciones odoo.addons.base.models.ir_cron: Exception in cron: 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_cron.py", line 132, in _process_jobs
+    with db.cursor() as cron_cr:
+         ^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 784, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 288, in __init__
+    self._cnx = pool.borrow(dsn)
+                ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 712, in borrow
+    result = psycopg2.connect(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: FATAL:  the database system is shutting down
+
+2024-11-06 15:45:13,602 1 INFO uniacme_votaciones odoo.sql_db: Connection to the database failed 
+2024-11-06 15:45:13,604 1 WARNING uniacme_votaciones odoo.addons.base.models.ir_cron: Exception in cron: 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_cron.py", line 132, in _process_jobs
+    with db.cursor() as cron_cr:
+         ^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 784, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 288, in __init__
+    self._cnx = pool.borrow(dsn)
+                ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 712, in borrow
+    result = psycopg2.connect(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: FATAL:  the database system is shutting down
+
+2024-11-06 15:45:15,136 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 1 connections  
+2024-11-06 15:45:15,148 1 ERROR uniacme_votaciones odoo.addons.bus.websocket: cursor already closed 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 318, in get_messages
+    message = self._process_next_message()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 464, in _process_next_message
+    self._handle_control_frame(frame)
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 602, in _handle_control_frame
+    self._terminate()
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 585, in _terminate
+    env["ir.websocket"]._on_websocket_closed(self._cookies)
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/models/ir_websocket.py", line 133, in _on_websocket_closed
+    self.env["bus.presence"].search([("user_id", "=", self.env.uid)]).status = "offline"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/models.py", line 1717, in search
+    return self.search_fetch(domain, [], offset=offset, limit=limit, order=order)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/models.py", line 1749, in search_fetch
+    return self._fetch_query(query, fields_to_fetch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/models.py", line 4180, in _fetch_query
+    fetched = self.browse(query)
+              ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/models.py", line 6154, in browse
+    if not ids:
+           ^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/query.py", line 261, in __bool__
+    return bool(self.get_result_ids())
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/query.py", line 225, in get_result_ids
+    self._ids = tuple(id_ for id_, in self._env.execute_query(self.select()))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 963, in execute_query
+    return [] if self.cr.description is None else self.cr.fetchall()
+                                                  ^^^^^^^^^^^^^^^^^^
+psycopg2.InterfaceError: cursor already closed
+2024-11-06 15:45:17,176 1 INFO ? odoo: Odoo version 18.0-20241029 
+2024-11-06 15:45:17,177 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-11-06 15:45:17,178 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/18.0', '/mnt/extra-addons'] 
+2024-11-06 15:45:17,179 1 INFO ? odoo: database: odoo@db:5432 
+2024-11-06 15:45:17,448 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-11-06 15:45:17,512 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2024-11-06 15:45:17,745 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on da991b1a4bd7:8069 
+2024-11-06 15:45:18,232 1 INFO uniacme_votaciones odoo.modules.loading: loading 1 modules... 
+2024-11-06 15:45:18,276 1 INFO uniacme_votaciones odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries (+0 extra) 
+2024-11-06 15:45:18,289 1 WARNING uniacme_votaciones odoo.modules.module: Missing `license` key in manifest for 'uniacme_votaciones', defaulting to LGPL-3 
+2024-11-06 15:45:18,298 1 INFO uniacme_votaciones odoo.modules.loading: loading 13 modules... 
+2024-11-06 15:45:18,631 1 WARNING uniacme_votaciones py.warnings: /usr/lib/python3/dist-packages/odoo/api.py:466: DeprecationWarning: The model odoo.addons.uniacme_votaciones.models.models is not overriding the create method in batch
+  File "/usr/lib/python3.12/threading.py", line 1030, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 390, in handle
+    super().handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 323, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2363, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1869, in _serve_db
+    self.registry, cr_readonly = self._open_registry()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1485, in _open_registry
+    registry = Registry(self.db)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 106, in __new__
+    return cls.new(db_name)
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 131, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 475, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 363, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 184, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/uniacme_votaciones/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/uniacme_votaciones/models/__init__.py", line 3, in <module>
+    from . import models
+  File "/mnt/extra-addons/uniacme_votaciones/models/models.py", line 22, in <module>
+    class UniversityStudent(models.Model):
+  File "/mnt/extra-addons/uniacme_votaciones/models/models.py", line 35, in UniversityStudent
+    @api.model
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 429, in model
+    return model_create_single(method)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 466, in model_create_single
+    warnings.warn(
+ 
+2024-11-06 15:45:18,757 1 INFO uniacme_votaciones odoo.modules.loading: 13 modules loaded in 0.46s, 0 queries (+0 extra) 
+2024-11-06 15:45:18,806 1 INFO uniacme_votaciones odoo.modules.loading: Modules loaded. 
+2024-11-06 15:45:18,813 1 INFO uniacme_votaciones odoo.modules.registry: Registry loaded in 0.617s 
+2024-11-06 15:45:18,815 1 INFO uniacme_votaciones odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-11-06 15:45:18,837 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:18] "GET /websocket?version=18.0-1 HTTP/1.1" 101 - 20 0.070 0.572
+2024-11-06 15:45:19,166 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-11-06 15:45:22,260 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:22] "POST /web/action/load HTTP/1.1" 200 - 11 0.022 0.597
+2024-11-06 15:45:22,354 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:22] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 60 0.039 0.035
+2024-11-06 15:45:22,386 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:22] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.021
+2024-11-06 15:45:22,421 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:22] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 50 0.024 0.031
+2024-11-06 15:45:22,450 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:22] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.013 0.070
+2024-11-06 15:45:25,391 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:25] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 47 0.016 0.014
+2024-11-06 15:45:25,403 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:25] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.004
+2024-11-06 15:45:27,697 1 INFO uniacme_votaciones odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['uniacme_votaciones'] to user cristianjr1292@gmail.com #2 via 172.18.0.1 
+2024-11-06 15:45:27,699 1 INFO uniacme_votaciones odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['uniacme_votaciones'] to user cristianjr1292@gmail.com #2 via 172.18.0.1 
+2024-11-06 15:45:27,700 1 INFO uniacme_votaciones odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['uniacme_votaciones'] to user cristianjr1292@gmail.com #2 via 172.18.0.1 
+2024-11-06 15:45:28,327 1 INFO uniacme_votaciones odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user cristianjr1292@gmail.com #2 via 172.18.0.1 
+2024-11-06 15:45:28,369 1 INFO uniacme_votaciones odoo.modules.loading: loading 1 modules... 
+2024-11-06 15:45:28,375 1 INFO uniacme_votaciones odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-11-06 15:45:28,443 1 INFO uniacme_votaciones odoo.modules.loading: updating modules list 
+2024-11-06 15:45:28,445 1 INFO uniacme_votaciones odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.18.0.1 
+2024-11-06 15:45:29,002 1 INFO uniacme_votaciones odoo.modules.loading: loading 13 modules... 
+2024-11-06 15:45:29,006 1 INFO uniacme_votaciones odoo.modules.loading: Loading module uniacme_votaciones (8/13) 
+2024-11-06 15:45:29,045 1 INFO uniacme_votaciones odoo.modules.registry: module uniacme_votaciones: creating or updating database tables 
+2024-11-06 15:45:29,132 1 INFO uniacme_votaciones odoo.modules.loading: loading uniacme_votaciones/security/ir.model.access.csv 
+2024-11-06 15:45:29,154 1 INFO uniacme_votaciones odoo.modules.loading: loading uniacme_votaciones/views/views.xml 
+2024-11-06 15:45:29,253 1 INFO uniacme_votaciones odoo.modules.loading: Module uniacme_votaciones: loading demo 
+2024-11-06 15:45:29,254 1 INFO uniacme_votaciones odoo.modules.loading: loading uniacme_votaciones/demo/demo.xml 
+2024-11-06 15:45:29,282 1 INFO uniacme_votaciones odoo.modules.loading: Module uniacme_votaciones loaded in 0.28s, 278 queries (+278 other) 
+2024-11-06 15:45:29,287 1 INFO uniacme_votaciones odoo.modules.loading: 13 modules loaded in 0.28s, 278 queries (+278 extra) 
+2024-11-06 15:45:29,378 1 INFO uniacme_votaciones odoo.addons.base.models.ir_model: Deleting 1733@ir.model.fields (uniacme_votaciones.field_voting_student__id_del_votante) 
+2024-11-06 15:45:29,398 1 INFO uniacme_votaciones odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [10041] 
+2024-11-06 15:45:29,398 1 INFO uniacme_votaciones odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [1733] 
+2024-11-06 15:45:29,399 1 INFO uniacme_votaciones odoo.modules.registry: verifying fields for every extended model 
+2024-11-06 15:45:29,590 1 INFO uniacme_votaciones odoo.modules.loading: Modules loaded. 
+2024-11-06 15:45:29,593 1 INFO uniacme_votaciones odoo.modules.registry: Registry changed, signaling through the database 
+2024-11-06 15:45:29,595 1 INFO uniacme_votaciones odoo.modules.registry: Registry loaded in 1.234s 
+2024-11-06 15:45:29,595 1 INFO uniacme_votaciones odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-11-06 15:45:29,600 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:29] "POST /web/dataset/call_button/ir.module.module/button_immediate_upgrade HTTP/1.1" 200 - 3854 1.110 0.798
+2024-11-06 15:45:29,629 1 INFO uniacme_votaciones odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-11-06 15:45:29,713 1 WARNING uniacme_votaciones odoo.modules.module: Missing `license` key in manifest for 'uniacme_votaciones', defaulting to LGPL-3 
+2024-11-06 15:45:29,915 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:29] "GET /odoo HTTP/1.1" 200 - 76 0.031 0.257
+2024-11-06 15:45:30,029 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:30] "GET /bus/websocket_worker_bundle?v=18.0-1 HTTP/1.1" 304 - 4 0.002 0.007
+2024-11-06 15:45:30,061 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:30] "GET /websocket?version=18.0-1 HTTP/1.1" 101 - 1 0.001 0.009
+2024-11-06 15:45:30,062 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:30] "POST /web/action/load HTTP/1.1" 200 - 11 0.010 0.011
+2024-11-06 15:45:30,065 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:30] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.011 0.012
+2024-11-06 15:45:30,086 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:30] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.002 0.004
+2024-11-06 15:45:30,108 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:30] "POST /web/dataset/call_kw/votaciones.candidate/get_views HTTP/1.1" 200 - 21 0.007 0.012
+2024-11-06 15:45:30,122 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:30] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.004
+2024-11-06 15:45:30,130 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:30] "POST /web/dataset/call_kw/votaciones.candidate/web_search_read HTTP/1.1" 200 - 6 0.006 0.005
+2024-11-06 15:45:31,700 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:31] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.003
+2024-11-06 15:45:33,017 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:33] "POST /web/action/load HTTP/1.1" 200 - 9 0.003 0.005
+2024-11-06 15:45:33,037 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:33] "POST /web/dataset/call_kw/voting.student/get_views HTTP/1.1" 200 - 8 0.003 0.006
+2024-11-06 15:45:33,049 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:33] "POST /web/dataset/call_kw/voting.student/onchange HTTP/1.1" 200 - 2 0.001 0.003
+2024-11-06 15:45:34,136 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:34] "POST /web/dataset/call_kw/university.voting/name_search HTTP/1.1" 200 - 3 0.002 0.003
+2024-11-06 15:45:34,846 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:34] "POST /web/dataset/call_kw/university.student/name_search HTTP/1.1" 200 - 2 0.001 0.003
+2024-11-06 15:45:35,607 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:35] "POST /web/dataset/call_kw/votaciones.candidate/name_search HTTP/1.1" 200 - 3 0.001 0.003
+2024-11-06 15:45:38,006 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:38] "POST /web/dataset/call_kw/voting.student/web_save HTTP/1.1" 200 - 10 0.004 0.006
+2024-11-06 15:45:38,025 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:38] "POST /web/dataset/call_button/voting.student/cast_vote HTTP/1.1" 200 - 10 0.005 0.006
+2024-11-06 15:45:41,936 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:45:41] "POST /web/dataset/call_kw/votaciones.candidate/web_search_read HTTP/1.1" 200 - 4 0.001 0.004
+2024-11-06 15:46:21,781 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:46:21] "POST /web/dataset/call_kw/voting.student/onchange HTTP/1.1" 200 - 1 0.001 0.004
+2024-11-06 15:46:22,478 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:46:22] "POST /web/dataset/call_kw/university.voting/name_search HTTP/1.1" 200 - 2 0.001 0.003
+2024-11-06 15:46:23,766 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:46:23] "POST /web/dataset/call_kw/university.student/name_search HTTP/1.1" 200 - 2 0.001 0.003
+2024-11-06 15:46:25,350 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:46:25] "POST /web/dataset/call_kw/votaciones.candidate/name_search HTTP/1.1" 200 - 3 0.001 0.003
+2024-11-06 15:46:26,827 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:46:26] "POST /web/dataset/call_kw/voting.student/web_save HTTP/1.1" 200 - 8 0.003 0.005
+2024-11-06 15:46:26,843 1 WARNING uniacme_votaciones odoo.http: Este estudiante ya ha votado en este proceso de votación. 
+2024-11-06 15:46:26,843 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:46:26] "POST /web/dataset/call_button/voting.student/cast_vote HTTP/1.1" 200 - 3 0.001 0.007
+2024-11-06 15:50:57,362 1 INFO ? odoo: Odoo version 18.0-20241029 
+2024-11-06 15:50:57,364 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-11-06 15:50:57,365 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/18.0', '/mnt/extra-addons'] 
+2024-11-06 15:50:57,365 1 INFO ? odoo: database: odoo@db:5432 
+2024-11-06 15:50:57,663 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-11-06 15:50:57,726 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2024-11-06 15:50:57,986 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on da991b1a4bd7:8069 
+2024-11-06 15:50:58,388 1 INFO uniacme_votaciones odoo.modules.loading: loading 1 modules... 
+2024-11-06 15:50:58,427 1 INFO uniacme_votaciones odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries (+0 extra) 
+2024-11-06 15:50:58,446 1 WARNING uniacme_votaciones odoo.modules.module: Missing `license` key in manifest for 'uniacme_votaciones', defaulting to LGPL-3 
+2024-11-06 15:50:58,460 1 INFO uniacme_votaciones odoo.modules.loading: loading 13 modules... 
+2024-11-06 15:50:58,802 1 WARNING uniacme_votaciones py.warnings: /usr/lib/python3/dist-packages/odoo/api.py:466: DeprecationWarning: The model odoo.addons.uniacme_votaciones.models.models is not overriding the create method in batch
+  File "/usr/lib/python3.12/threading.py", line 1030, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 390, in handle
+    super().handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 323, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2363, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1869, in _serve_db
+    self.registry, cr_readonly = self._open_registry()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1485, in _open_registry
+    registry = Registry(self.db)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 106, in __new__
+    return cls.new(db_name)
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 131, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 475, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 363, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 184, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/uniacme_votaciones/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/uniacme_votaciones/models/__init__.py", line 3, in <module>
+    from . import models
+  File "/mnt/extra-addons/uniacme_votaciones/models/models.py", line 22, in <module>
+    class UniversityStudent(models.Model):
+  File "/mnt/extra-addons/uniacme_votaciones/models/models.py", line 35, in UniversityStudent
+    @api.model
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 429, in model
+    return model_create_single(method)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 466, in model_create_single
+    warnings.warn(
+ 
+2024-11-06 15:50:58,942 1 INFO uniacme_votaciones odoo.modules.loading: 13 modules loaded in 0.48s, 0 queries (+0 extra) 
+2024-11-06 15:50:58,981 1 INFO uniacme_votaciones odoo.modules.loading: Modules loaded. 
+2024-11-06 15:50:58,988 1 INFO uniacme_votaciones odoo.modules.registry: Registry loaded in 0.711s 
+2024-11-06 15:50:58,989 1 INFO uniacme_votaciones odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-11-06 15:50:59,116 1 WARNING uniacme_votaciones odoo.modules.module: Missing `license` key in manifest for 'uniacme_votaciones', defaulting to LGPL-3 
+2024-11-06 15:50:59,201 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:50:59] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.010
+2024-11-06 15:50:59,336 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:50:59] "GET /odoo/action-92 HTTP/1.1" 200 - 97 0.190 0.870
+2024-11-06 15:50:59,487 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:50:59] "GET /bus/websocket_worker_bundle?v=18.0-1 HTTP/1.1" 304 - 4 0.003 0.003
+2024-11-06 15:50:59,529 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:50:59] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 17 0.009 0.015
+2024-11-06 15:50:59,529 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:50:59] "GET /websocket?version=18.0-1 HTTP/1.1" 101 - 1 0.001 0.005
+2024-11-06 15:50:59,551 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:50:59] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.003 0.004
+2024-11-06 15:50:59,840 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-11-06 15:51:00,432 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:51:00] "POST /web/action/load HTTP/1.1" 200 - 11 0.010 0.917
+2024-11-06 15:51:00,460 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:51:00] "POST /web/dataset/call_kw/votaciones.candidate/get_views HTTP/1.1" 200 - 22 0.009 0.011
+2024-11-06 15:51:00,476 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:51:00] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.000 0.003
+2024-11-06 15:51:00,482 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:51:00] "POST /web/dataset/call_kw/votaciones.candidate/web_search_read HTTP/1.1" 200 - 6 0.006 0.004
+2024-11-06 15:51:01,067 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:51:01] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.002
+2024-11-06 15:51:57,821 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:51:57] "GET /web/session/logout HTTP/1.1" 303 - 1 0.001 0.003
+2024-11-06 15:51:57,839 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:51:57] "GET /odoo HTTP/1.1" 303 - 4 0.002 0.004
+2024-11-06 15:51:57,944 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:51:57] "GET /web/login?redirect=/odoo? HTTP/1.1" 200 - 44 0.023 0.073
+2024-11-06 15:51:57,995 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:51:57] "GET /web/binary/company_logo HTTP/1.1" 304 - 5 0.005 0.008
+2024-11-06 15:51:58,121 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:51:58] "GET /web/webclient/translations/1730908318111 HTTP/1.1" 200 - 5 0.002 0.003
+2024-11-06 15:51:59,289 1 INFO uniacme_votaciones werkzeug: 172.18.0.1 - - [06/Nov/2024 15:51:59] "GET /web/database/manager HTTP/1.1" 200 - 7 0.004 0.051
+2024-11-06 15:52:04,765 1 INFO None odoo.sql_db: ConnectionPool(read/write;used=3/count=3/max=64): Closed 2 connections to 'user=odoo password=xxx dbname=uniacme_votaciones host=db port=5432 application_name=odoo-1 sslmode=prefer' 
+2024-11-06 15:52:04,815 1 INFO None odoo.service.db: DROP DB: uniacme_votaciones 
+2024-11-06 15:52:04,822 1 INFO None werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:04] "POST /web/database/drop HTTP/1.1" 303 - 7 0.045 0.485
+2024-11-06 15:52:05,406 1 INFO ? werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:05] "GET /web/database/manager HTTP/1.1" 200 - 2 0.003 0.576
+2024-11-06 15:52:21,811 1 INFO None odoo.service.db: Create database `db-uniacme`. 
+2024-11-06 15:52:22,805 1 INFO db-uniacme odoo.modules.loading: loading 1 modules... 
+2024-11-06 15:52:22,806 1 INFO db-uniacme odoo.modules.loading: Loading module base (1/1) 
+2024-11-06 15:52:22,824 1 INFO db-uniacme odoo.modules.registry: module base: creating or updating database tables 
+2024-11-06 15:52:23,040 1 INFO db-uniacme odoo.models: Prepare computation of ir.module.module.menus_by_module 
+2024-11-06 15:52:23,040 1 INFO db-uniacme odoo.models: Prepare computation of ir.module.module.reports_by_module 
+2024-11-06 15:52:23,041 1 INFO db-uniacme odoo.models: Prepare computation of ir.module.module.views_by_module 
+2024-11-06 15:52:23,113 1 INFO db-uniacme odoo.models: Prepare computation of res.partner.user_id 
+2024-11-06 15:52:23,113 1 INFO db-uniacme odoo.models: Prepare computation of res.partner.commercial_partner_id 
+2024-11-06 15:52:23,114 1 INFO db-uniacme odoo.models: Prepare computation of res.partner.complete_name 
+2024-11-06 15:52:23,114 1 INFO db-uniacme odoo.models: Prepare computation of res.partner.company_registry 
+2024-11-06 15:52:23,115 1 INFO db-uniacme odoo.models: Prepare computation of res.partner.commercial_company_name 
+2024-11-06 15:52:23,115 1 INFO db-uniacme odoo.models: Prepare computation of res.partner.partner_share 
+2024-11-06 15:52:23,141 1 INFO db-uniacme odoo.models: Prepare computation of res.currency.decimal_places 
+2024-11-06 15:52:23,161 1 INFO db-uniacme odoo.models: Prepare computation of res.company.uses_default_logo 
+2024-11-06 15:52:23,161 1 INFO db-uniacme odoo.models: Prepare computation of res.company.logo_web 
+2024-11-06 15:52:23,163 1 INFO db-uniacme odoo.models: Computing parent_path for table res_company... 
+2024-11-06 15:52:23,182 1 INFO db-uniacme odoo.models: Prepare computation of res.users.signature 
+2024-11-06 15:52:23,183 1 INFO db-uniacme odoo.models: Prepare computation of res.users.share 
+2024-11-06 15:52:24,278 1 INFO db-uniacme odoo.modules.loading: loading base/data/res_bank.xml 
+2024-11-06 15:52:24,283 1 INFO db-uniacme odoo.modules.loading: loading base/data/res.lang.csv 
+2024-11-06 15:52:24,318 1 INFO db-uniacme odoo.modules.loading: loading base/data/res_lang_data.xml 
+2024-11-06 15:52:24,347 1 INFO db-uniacme odoo.modules.loading: loading base/data/res_partner_data.xml 
+2024-11-06 15:52:24,400 1 INFO db-uniacme odoo.modules.loading: loading base/data/res_currency_data.xml 
+2024-11-06 15:52:24,822 1 INFO db-uniacme odoo.modules.loading: loading base/data/res_company_data.xml 
+2024-11-06 15:52:24,829 1 INFO db-uniacme odoo.modules.loading: loading base/data/res_users_data.xml 
+2024-11-06 15:52:25,750 1 INFO db-uniacme odoo.modules.loading: loading base/data/report_paperformat_data.xml 
+2024-11-06 15:52:25,756 1 INFO db-uniacme odoo.modules.loading: loading base/data/res_country_data.xml 
+2024-11-06 15:52:26,066 1 INFO db-uniacme odoo.modules.loading: loading base/data/ir_demo_data.xml 
+2024-11-06 15:52:26,076 1 INFO db-uniacme odoo.modules.loading: loading base/security/base_groups.xml 
+2024-11-06 15:52:26,626 1 INFO db-uniacme odoo.modules.loading: loading base/security/base_security.xml 
+2024-11-06 15:52:26,737 1 INFO db-uniacme odoo.modules.loading: loading base/views/base_menus.xml 
+2024-11-06 15:52:26,789 1 INFO db-uniacme odoo.modules.loading: loading base/views/decimal_precision_views.xml 
+2024-11-06 15:52:26,804 1 INFO db-uniacme odoo.modules.loading: loading base/views/res_config_views.xml 
+2024-11-06 15:52:26,809 1 INFO db-uniacme odoo.modules.loading: loading base/data/res.country.state.csv 
+2024-11-06 15:52:27,357 1 INFO db-uniacme odoo.modules.loading: loading base/views/ir_actions_views.xml 
+2024-11-06 15:52:27,478 1 INFO db-uniacme odoo.modules.loading: loading base/views/ir_asset_views.xml 
+2024-11-06 15:52:27,493 1 INFO db-uniacme odoo.modules.loading: loading base/views/ir_config_parameter_views.xml 
+2024-11-06 15:52:27,507 1 INFO db-uniacme odoo.modules.loading: loading base/views/ir_cron_views.xml 
+2024-11-06 15:52:27,530 1 INFO db-uniacme odoo.modules.loading: loading base/views/ir_cron_trigger_views.xml 
+2024-11-06 15:52:27,543 1 INFO db-uniacme odoo.modules.loading: loading base/views/ir_filters_views.xml 
+2024-11-06 15:52:27,557 1 INFO db-uniacme odoo.modules.loading: loading base/views/ir_mail_server_views.xml 
+2024-11-06 15:52:27,573 1 INFO db-uniacme odoo.modules.loading: loading base/views/ir_model_views.xml 
+2024-11-06 15:52:27,682 1 INFO db-uniacme odoo.modules.loading: loading base/views/ir_attachment_views.xml 
+2024-11-06 15:52:27,699 1 INFO db-uniacme odoo.modules.loading: loading base/views/ir_rule_views.xml 
+2024-11-06 15:52:27,715 1 INFO db-uniacme odoo.modules.loading: loading base/views/ir_sequence_views.xml 
+2024-11-06 15:52:27,731 1 INFO db-uniacme odoo.modules.loading: loading base/views/ir_ui_menu_views.xml 
+2024-11-06 15:52:27,746 1 INFO db-uniacme odoo.modules.loading: loading base/views/ir_ui_view_views.xml 
+2024-11-06 15:52:27,779 1 INFO db-uniacme odoo.modules.loading: loading base/views/ir_default_views.xml 
+2024-11-06 15:52:27,794 1 INFO db-uniacme odoo.modules.loading: loading base/data/ir_config_parameter_data.xml 
+2024-11-06 15:52:27,797 1 INFO db-uniacme odoo.modules.loading: loading base/data/ir_cron_data.xml 
+2024-11-06 15:52:27,807 1 INFO db-uniacme odoo.modules.loading: loading base/report/ir_model_report.xml 
+2024-11-06 15:52:27,811 1 INFO db-uniacme odoo.modules.loading: loading base/report/ir_model_templates.xml 
+2024-11-06 15:52:27,818 1 INFO db-uniacme odoo.modules.loading: loading base/views/ir_logging_views.xml 
+2024-11-06 15:52:27,833 1 INFO db-uniacme odoo.modules.loading: loading base/views/ir_qweb_widget_templates.xml 
+2024-11-06 15:52:27,842 1 INFO db-uniacme odoo.modules.loading: loading base/views/ir_module_views.xml 
+2024-11-06 15:52:27,882 1 INFO db-uniacme odoo.modules.loading: loading base/data/ir_module_category_data.xml 
+2024-11-06 15:52:27,931 1 INFO db-uniacme odoo.modules.loading: loading base/data/ir_module_module.xml 
+2024-11-06 15:52:27,977 1 INFO db-uniacme odoo.modules.loading: loading base/report/ir_module_reports.xml 
+2024-11-06 15:52:27,982 1 INFO db-uniacme odoo.modules.loading: loading base/report/ir_module_report_templates.xml 
+2024-11-06 15:52:27,987 1 INFO db-uniacme odoo.modules.loading: loading base/wizard/base_module_update_views.xml 
+2024-11-06 15:52:28,000 1 INFO db-uniacme odoo.modules.loading: loading base/wizard/base_language_install_views.xml 
+2024-11-06 15:52:28,010 1 INFO db-uniacme odoo.modules.loading: loading base/wizard/base_import_language_views.xml 
+2024-11-06 15:52:28,019 1 INFO db-uniacme odoo.modules.loading: loading base/wizard/base_module_upgrade_views.xml 
+2024-11-06 15:52:28,035 1 INFO db-uniacme odoo.modules.loading: loading base/wizard/base_module_uninstall_views.xml 
+2024-11-06 15:52:28,042 1 INFO db-uniacme odoo.modules.loading: loading base/wizard/base_export_language_views.xml 
+2024-11-06 15:52:28,052 1 INFO db-uniacme odoo.modules.loading: loading base/wizard/base_partner_merge_views.xml 
+2024-11-06 15:52:28,064 1 INFO db-uniacme odoo.modules.loading: loading base/data/ir_demo_failure_data.xml 
+2024-11-06 15:52:28,076 1 INFO db-uniacme odoo.modules.loading: loading base/views/ir_profile_views.xml 
+2024-11-06 15:52:28,097 1 INFO db-uniacme odoo.modules.loading: loading base/views/res_company_views.xml 
+2024-11-06 15:52:28,115 1 INFO db-uniacme odoo.modules.loading: loading base/views/res_lang_views.xml 
+2024-11-06 15:52:28,132 1 INFO db-uniacme odoo.modules.loading: loading base/views/res_partner_views.xml 
+2024-11-06 15:52:28,205 1 INFO db-uniacme odoo.modules.loading: loading base/views/res_bank_views.xml 
+2024-11-06 15:52:28,229 1 INFO db-uniacme odoo.modules.loading: loading base/views/res_country_views.xml 
+2024-11-06 15:52:28,258 1 INFO db-uniacme odoo.modules.loading: loading base/views/res_currency_views.xml 
+2024-11-06 15:52:28,285 1 INFO db-uniacme odoo.modules.loading: loading base/views/res_users_views.xml 
+2024-11-06 15:52:28,379 1 INFO db-uniacme odoo.modules.loading: loading base/views/res_device_views.xml 
+2024-11-06 15:52:28,396 1 INFO db-uniacme odoo.modules.loading: loading base/views/res_users_identitycheck_views.xml 
+2024-11-06 15:52:28,402 1 INFO db-uniacme odoo.modules.loading: loading base/views/res_config_settings_views.xml 
+2024-11-06 15:52:28,409 1 INFO db-uniacme odoo.modules.loading: loading base/views/report_paperformat_views.xml 
+2024-11-06 15:52:28,431 1 INFO db-uniacme odoo.modules.loading: loading base/security/ir.model.access.csv 
+2024-11-06 15:52:28,535 1 INFO db-uniacme odoo.modules.loading: Module base: loading demo 
+2024-11-06 15:52:28,536 1 INFO db-uniacme odoo.modules.loading: loading base/data/res_users_demo.xml 
+2024-11-06 15:52:29,842 1 INFO db-uniacme odoo.modules.loading: loading base/data/res_partner_bank_demo.xml 
+2024-11-06 15:52:29,847 1 INFO db-uniacme odoo.modules.loading: loading base/data/res_currency_demo.xml 
+2024-11-06 15:52:29,852 1 INFO db-uniacme odoo.modules.loading: loading base/data/res_currency_rate_demo.xml 
+2024-11-06 15:52:30,029 1 INFO db-uniacme odoo.modules.loading: loading base/data/res_bank_demo.xml 
+2024-11-06 15:52:30,035 1 INFO db-uniacme odoo.modules.loading: loading base/data/res_partner_demo.xml 
+2024-11-06 15:52:30,156 1 INFO db-uniacme odoo.modules.loading: loading base/data/res_partner_image_demo.xml 
+2024-11-06 15:52:30,517 1 INFO db-uniacme odoo.modules.loading: Module base loaded in 7.71s, 9220 queries (+9220 other) 
+2024-11-06 15:52:30,518 1 INFO db-uniacme odoo.modules.loading: 1 modules loaded in 7.71s, 9220 queries (+9220 extra) 
+2024-11-06 15:52:30,542 1 INFO db-uniacme odoo.modules.loading: updating modules list 
+2024-11-06 15:52:30,543 1 INFO db-uniacme odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2024-11-06 15:52:31,103 1 INFO db-uniacme odoo.modules.loading: loading 12 modules... 
+2024-11-06 15:52:31,104 1 INFO db-uniacme odoo.modules.loading: Loading module web (2/12) 
+2024-11-06 15:52:31,124 1 INFO db-uniacme odoo.modules.registry: module web: creating or updating database tables 
+2024-11-06 15:52:31,547 1 INFO db-uniacme odoo.modules.loading: loading web/security/ir.model.access.csv 
+2024-11-06 15:52:31,555 1 INFO db-uniacme odoo.modules.loading: loading web/views/webclient_templates.xml 
+2024-11-06 15:52:31,593 1 INFO db-uniacme odoo.modules.loading: loading web/views/report_templates.xml 
+2024-11-06 15:52:31,659 1 INFO db-uniacme odoo.modules.loading: loading web/views/base_document_layout_views.xml 
+2024-11-06 15:52:31,670 1 INFO db-uniacme odoo.modules.loading: loading web/views/partner_view.xml 
+2024-11-06 15:52:31,675 1 INFO db-uniacme odoo.modules.loading: loading web/views/speedscope_template.xml 
+2024-11-06 15:52:31,679 1 INFO db-uniacme odoo.modules.loading: loading web/views/neutralize_views.xml 
+2024-11-06 15:52:31,683 1 INFO db-uniacme odoo.modules.loading: loading web/data/ir_attachment.xml 
+2024-11-06 15:52:31,687 1 INFO db-uniacme odoo.modules.loading: loading web/data/report_layout.xml 
+2024-11-06 15:52:31,724 1 INFO db-uniacme odoo.modules.loading: Module web loaded in 0.62s, 1110 queries (+1110 other) 
+2024-11-06 15:52:31,725 1 INFO db-uniacme odoo.modules.loading: Loading module auth_totp (3/12) 
+2024-11-06 15:52:31,739 1 INFO db-uniacme odoo.modules.registry: module auth_totp: creating or updating database tables 
+2024-11-06 15:52:31,834 1 INFO db-uniacme odoo.modules.loading: loading auth_totp/security/security.xml 
+2024-11-06 15:52:31,854 1 INFO db-uniacme odoo.modules.loading: loading auth_totp/security/ir.model.access.csv 
+2024-11-06 15:52:31,862 1 INFO db-uniacme odoo.modules.loading: loading auth_totp/data/ir_action_data.xml 
+2024-11-06 15:52:31,868 1 INFO db-uniacme odoo.modules.loading: loading auth_totp/views/res_users_views.xml 
+2024-11-06 15:52:31,891 1 INFO db-uniacme odoo.modules.loading: loading auth_totp/views/templates.xml 
+2024-11-06 15:52:31,895 1 INFO db-uniacme odoo.modules.loading: loading auth_totp/wizard/auth_totp_wizard_views.xml 
+2024-11-06 15:52:31,913 1 INFO db-uniacme odoo.modules.loading: Module auth_totp loaded in 0.19s, 188 queries (+188 other) 
+2024-11-06 15:52:31,913 1 INFO db-uniacme odoo.modules.loading: Loading module base_import (4/12) 
+2024-11-06 15:52:31,934 1 INFO db-uniacme odoo.modules.registry: module base_import: creating or updating database tables 
+2024-11-06 15:52:32,339 1 INFO db-uniacme odoo.modules.loading: loading base_import/security/ir.model.access.csv 
+2024-11-06 15:52:32,356 1 INFO db-uniacme odoo.modules.loading: Module base_import loaded in 0.44s, 887 queries (+887 other) 
+2024-11-06 15:52:32,356 1 INFO db-uniacme odoo.modules.loading: Loading module base_import_module (5/12) 
+2024-11-06 15:52:32,371 1 INFO db-uniacme odoo.modules.registry: module base_import_module: creating or updating database tables 
+2024-11-06 15:52:32,422 1 INFO db-uniacme odoo.modules.loading: loading base_import_module/security/ir.model.access.csv 
+2024-11-06 15:52:32,430 1 INFO db-uniacme odoo.modules.loading: loading base_import_module/views/base_import_module_view.xml 
+2024-11-06 15:52:32,445 1 INFO db-uniacme odoo.modules.loading: loading base_import_module/views/ir_module_views.xml 
+2024-11-06 15:52:32,481 1 INFO db-uniacme odoo.modules.loading: Module base_import_module loaded in 0.12s, 164 queries (+164 other) 
+2024-11-06 15:52:32,481 1 INFO db-uniacme odoo.modules.loading: Loading module base_setup (6/12) 
+2024-11-06 15:52:32,497 1 INFO db-uniacme odoo.modules.registry: module base_setup: creating or updating database tables 
+2024-11-06 15:52:32,536 1 INFO db-uniacme odoo.modules.loading: loading base_setup/data/base_setup_data.xml 
+2024-11-06 15:52:32,542 1 INFO db-uniacme odoo.modules.loading: loading base_setup/views/res_config_settings_views.xml 
+2024-11-06 15:52:32,566 1 INFO db-uniacme odoo.modules.loading: loading base_setup/views/res_partner_views.xml 
+2024-11-06 15:52:32,583 1 INFO db-uniacme odoo.modules.loading: Module base_setup loaded in 0.10s, 150 queries (+150 other) 
+2024-11-06 15:52:32,583 1 INFO db-uniacme odoo.modules.loading: Loading module bus (7/12) 
+2024-11-06 15:52:32,600 1 INFO db-uniacme odoo.modules.registry: module bus: creating or updating database tables 
+2024-11-06 15:52:32,682 1 INFO db-uniacme odoo.modules.loading: loading bus/security/ir.model.access.csv 
+2024-11-06 15:52:32,699 1 INFO db-uniacme odoo.modules.loading: Module bus loaded in 0.12s, 165 queries (+165 other) 
+2024-11-06 15:52:32,700 1 INFO db-uniacme odoo.modules.loading: Loading module web_tour (8/12) 
+2024-11-06 15:52:32,716 1 INFO db-uniacme odoo.modules.registry: module web_tour: creating or updating database tables 
+2024-11-06 15:52:32,721 1 INFO db-uniacme odoo.models: Prepare computation of res.users.tour_enabled 
+2024-11-06 15:52:32,778 1 INFO db-uniacme odoo.modules.loading: loading web_tour/security/ir.model.access.csv 
+2024-11-06 15:52:32,788 1 INFO db-uniacme odoo.modules.loading: loading web_tour/views/tour_views.xml 
+2024-11-06 15:52:32,810 1 INFO db-uniacme odoo.modules.loading: loading web_tour/views/res_users_views.xml 
+2024-11-06 15:52:32,832 1 INFO db-uniacme odoo.modules.loading: Module web_tour loaded in 0.13s, 188 queries (+188 other) 
+2024-11-06 15:52:32,832 1 INFO db-uniacme odoo.modules.loading: Loading module html_editor (9/12) 
+2024-11-06 15:52:32,847 1 INFO db-uniacme odoo.modules.registry: module html_editor: creating or updating database tables 
+2024-11-06 15:52:32,878 1 INFO db-uniacme odoo.modules.loading: Module html_editor loaded in 0.05s, 42 queries (+42 other) 
+2024-11-06 15:52:32,879 1 INFO db-uniacme odoo.modules.loading: Loading module iap (10/12) 
+2024-11-06 15:52:32,895 1 INFO db-uniacme odoo.modules.registry: module iap: creating or updating database tables 
+2024-11-06 15:52:32,947 1 INFO db-uniacme odoo.modules.loading: loading iap/data/services.xml 
+2024-11-06 15:52:32,952 1 INFO db-uniacme odoo.modules.loading: loading iap/security/ir.model.access.csv 
+2024-11-06 15:52:32,962 1 INFO db-uniacme odoo.modules.loading: loading iap/security/ir_rule.xml 
+2024-11-06 15:52:32,968 1 INFO db-uniacme odoo.modules.loading: loading iap/views/iap_views.xml 
+2024-11-06 15:52:32,987 1 INFO db-uniacme odoo.modules.loading: loading iap/views/res_config_settings.xml 
+2024-11-06 15:52:33,007 1 INFO db-uniacme odoo.modules.loading: Module iap loaded in 0.13s, 183 queries (+183 other) 
+2024-11-06 15:52:33,007 1 INFO db-uniacme odoo.modules.loading: Loading module web_editor (11/12) 
+2024-11-06 15:52:33,035 1 INFO db-uniacme odoo.modules.registry: module web_editor: creating or updating database tables 
+2024-11-06 15:52:33,472 1 INFO db-uniacme odoo.modules.loading: loading web_editor/security/ir.model.access.csv 
+2024-11-06 15:52:33,481 1 INFO db-uniacme odoo.modules.loading: loading web_editor/data/editor_assets.xml 
+2024-11-06 15:52:33,485 1 INFO db-uniacme odoo.modules.loading: loading web_editor/views/editor.xml 
+2024-11-06 15:52:33,496 1 INFO db-uniacme odoo.modules.loading: loading web_editor/views/snippets.xml 
+2024-11-06 15:52:33,536 1 INFO db-uniacme odoo.modules.loading: Module web_editor loaded in 0.53s, 1017 queries (+1017 other) 
+2024-11-06 15:52:33,536 1 INFO db-uniacme odoo.modules.loading: Loading module web_unsplash (12/12) 
+2024-11-06 15:52:33,553 1 INFO db-uniacme odoo.modules.registry: module web_unsplash: creating or updating database tables 
+2024-11-06 15:52:33,587 1 INFO db-uniacme odoo.modules.loading: loading web_unsplash/views/res_config_settings_view.xml 
+2024-11-06 15:52:33,612 1 INFO db-uniacme odoo.modules.loading: Module web_unsplash loaded in 0.08s, 98 queries (+98 other) 
+2024-11-06 15:52:33,612 1 INFO db-uniacme odoo.modules.loading: 12 modules loaded in 2.51s, 4192 queries (+4192 extra) 
+2024-11-06 15:52:33,820 1 INFO db-uniacme odoo.modules.loading: Modules loaded. 
+2024-11-06 15:52:33,823 1 INFO db-uniacme odoo.modules.registry: Registry changed, signaling through the database 
+2024-11-06 15:52:33,824 1 INFO db-uniacme odoo.modules.registry: Registry loaded in 11.027s 
+2024-11-06 15:52:34,779 1 INFO db-uniacme odoo.addons.base.models.res_users: Login successful for db:db-uniacme login:cristianjr1292@gmail.com from 172.18.0.1 
+2024-11-06 15:52:34,787 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:34] "POST /web/database/create HTTP/1.1" 303 - 19514 6.244 7.626
+2024-11-06 15:52:34,800 1 INFO db-uniacme odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-11-06 15:52:34,814 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:34] "GET /odoo HTTP/1.1" 303 - 7 0.002 0.013
+2024-11-06 15:52:34,909 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:34] "GET /web/login?redirect=/odoo? HTTP/1.1" 200 - 54 0.013 0.074
+2024-11-06 15:52:34,944 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:34] "GET /web/binary/company_logo HTTP/1.1" 200 - 5 0.002 0.004
+2024-11-06 15:52:34,998 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:34] "GET /web/webclient/translations/1730908354986 HTTP/1.1" 200 - 5 0.002 0.004
+2024-11-06 15:52:42,821 1 INFO db-uniacme odoo.addons.base.models.res_users: Login successful for db:db-uniacme login:cristianjr1292@gmail.com from 172.18.0.1 
+2024-11-06 15:52:42,826 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:42] "POST /web/login HTTP/1.1" 303 - 32 0.014 0.474
+2024-11-06 15:52:42,836 1 INFO db-uniacme odoo.addons.base.models.res_device: User 2 inserts device log (JK2xO9vMX1JVx5UmBP9umeCfYr3OBksFravkTwnT8G) 
+2024-11-06 15:52:42,966 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:42] "GET /odoo HTTP/1.1" 200 - 65 0.016 0.117
+2024-11-06 15:52:43,129 1 INFO db-uniacme odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/ba037c6/bus.websocket_worker_assets.min.js (id:193) 
+2024-11-06 15:52:43,133 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:43] "GET /bus/websocket_worker_bundle?v=18.0-1 HTTP/1.1" 304 - 11 0.004 0.014
+2024-11-06 15:52:43,169 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:43] "POST /web/action/load HTTP/1.1" 200 - 10 0.014 0.019
+2024-11-06 15:52:43,173 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:43] "GET /web/image/res.partner/3/avatar_128?unique=1730926354000 HTTP/1.1" 200 - 8 0.010 0.026
+2024-11-06 15:52:43,178 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:43] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.018 0.022
+2024-11-06 15:52:43,178 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:43] "GET /websocket?version=18.0-1 HTTP/1.1" 101 - 1 0.002 0.018
+2024-11-06 15:52:43,199 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:43] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.004 0.005
+2024-11-06 15:52:43,234 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:43] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 57 0.017 0.026
+2024-11-06 15:52:43,249 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:43] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.005
+2024-11-06 15:52:43,277 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:43] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 50 0.017 0.015
+2024-11-06 15:52:43,300 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:43] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.003 0.052
+2024-11-06 15:52:47,418 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:47] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 47 0.013 0.012
+2024-11-06 15:52:47,430 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:52:47] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.004
+2024-11-06 15:52:56,307 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-11-06 15:52:56,313 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-11-06 15:52:56,318 1 ERROR ? odoo.addons.bus.models.bus: Bus.loop error, sleep and retry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/models/bus.py", line 255, in run
+    self.loop()
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/models/bus.py", line 240, in loop
+    conn.poll()
+psycopg2.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2024-11-06 15:52:56,340 1 INFO db-uniacme odoo.sql_db: Connection to the database failed 
+2024-11-06 15:52:56,341 1 WARNING db-uniacme odoo.addons.base.models.ir_cron: Exception in cron: 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_cron.py", line 132, in _process_jobs
+    with db.cursor() as cron_cr:
+         ^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 784, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 288, in __init__
+    self._cnx = pool.borrow(dsn)
+                ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 712, in borrow
+    result = psycopg2.connect(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: FATAL:  the database system is shutting down
+
+2024-11-06 15:52:56,343 1 INFO db-uniacme odoo.sql_db: Connection to the database failed 
+2024-11-06 15:52:56,347 1 WARNING db-uniacme odoo.addons.base.models.ir_cron: Exception in cron: 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_cron.py", line 132, in _process_jobs
+    with db.cursor() as cron_cr:
+         ^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 784, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 288, in __init__
+    self._cnx = pool.borrow(dsn)
+                ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 712, in borrow
+    result = psycopg2.connect(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: FATAL:  the database system is shutting down
+
+2024-11-06 15:52:56,439 1 INFO db-uniacme odoo.sql_db: Connection to the database failed 
+2024-11-06 15:52:56,442 1 INFO db-uniacme odoo.sql_db: Connection to the database failed 
+2024-11-06 15:52:56,559 1 ERROR db-uniacme werkzeug: Error on request:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 318, in get_messages
+    message = self._process_next_message()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 464, in _process_next_message
+    self._handle_control_frame(frame)
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 602, in _handle_control_frame
+    self._terminate()
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 583, in _terminate
+    with acquire_cursor(self._db) as cr:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 47, in acquire_cursor
+    return Registry(db).cursor()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 998, in cursor
+    return connection.cursor()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 784, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 288, in __init__
+    self._cnx = pool.borrow(dsn)
+                ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 712, in borrow
+    result = psycopg2.connect(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: FATAL:  the database system is shutting down
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 359, in execute
+    application_iter.close()
+  File "/usr/lib/python3/dist-packages/werkzeug/wsgi.py", line 260, in close
+    callback()
+  File "/usr/lib/python3/dist-packages/werkzeug/wrappers/response.py", line 407, in close
+    func()
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 915, in <lambda>
+    response.call_on_close(lambda: cls._serve_forever(
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 1021, in _serve_forever
+    for message in websocket.get_messages():
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 322, in get_messages
+    self._handle_transport_error(exc)
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 627, in _handle_transport_error
+    registry = registry.check_signaling()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 878, in check_signaling
+    with nullcontext(cr) if cr is not None else closing(self.cursor()) as cr:
+                                                        ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 998, in cursor
+    return connection.cursor()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 784, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 288, in __init__
+    self._cnx = pool.borrow(dsn)
+                ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 712, in borrow
+    result = psycopg2.connect(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: FATAL:  the database system is shutting down - - -
+2024-11-06 15:52:56,610 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 0 connections  
+2024-11-06 15:52:58,872 1 INFO ? odoo: Odoo version 18.0-20241029 
+2024-11-06 15:52:58,873 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-11-06 15:52:58,874 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/18.0', '/mnt/extra-addons'] 
+2024-11-06 15:52:58,874 1 INFO ? odoo: database: odoo@db:5432 
+2024-11-06 15:52:59,068 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-11-06 15:52:59,075 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2024-11-06 15:52:59,179 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on da991b1a4bd7:8069 
+2024-11-06 15:53:02,947 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'uniacme_votaciones', defaulting to LGPL-3 
+2024-11-06 15:53:02,965 1 INFO db-uniacme odoo.modules.loading: loading 1 modules... 
+2024-11-06 15:53:02,971 1 INFO db-uniacme odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-11-06 15:53:02,973 1 INFO db-uniacme odoo.modules.loading: loading 12 modules... 
+2024-11-06 15:53:03,150 1 INFO db-uniacme odoo.modules.loading: 12 modules loaded in 0.18s, 0 queries (+0 extra) 
+2024-11-06 15:53:03,177 1 INFO db-uniacme odoo.modules.loading: Modules loaded. 
+2024-11-06 15:53:03,180 1 INFO db-uniacme odoo.modules.registry: Registry loaded in 0.231s 
+2024-11-06 15:53:03,182 1 INFO db-uniacme odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-11-06 15:53:03,199 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:03] "GET /websocket?version=18.0-1 HTTP/1.1" 101 - 5 0.005 0.018
+2024-11-06 15:53:03,202 1 INFO db-uniacme odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['uniacme_votaciones'] to user cristianjr1292@gmail.com #2 via 172.18.0.1 
+2024-11-06 15:53:03,202 1 INFO db-uniacme odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2024-11-06 15:53:03,205 1 INFO db-uniacme odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['uniacme_votaciones'] to user cristianjr1292@gmail.com #2 via 172.18.0.1 
+2024-11-06 15:53:03,256 1 INFO db-uniacme odoo.modules.loading: loading 1 modules... 
+2024-11-06 15:53:03,262 1 INFO db-uniacme odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2024-11-06 15:53:03,279 1 INFO db-uniacme odoo.modules.loading: updating modules list 
+2024-11-06 15:53:03,280 1 INFO db-uniacme odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.18.0.1 
+2024-11-06 15:53:03,794 1 INFO db-uniacme odoo.modules.loading: loading 12 modules... 
+2024-11-06 15:53:03,800 1 INFO db-uniacme odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-11-06 15:53:03,802 1 INFO db-uniacme odoo.modules.loading: loading 13 modules... 
+2024-11-06 15:53:03,802 1 INFO db-uniacme odoo.modules.loading: Loading module uniacme_votaciones (8/13) 
+2024-11-06 15:53:03,873 1 WARNING db-uniacme py.warnings: /usr/lib/python3/dist-packages/odoo/api.py:466: DeprecationWarning: The model odoo.addons.uniacme_votaciones.models.models is not overriding the create method in batch
+  File "/usr/lib/python3.12/threading.py", line 1030, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 390, in handle
+    super().handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 323, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2363, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1891, in _serve_db
+    return self._transactioning(
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1954, in _transactioning
+    return service_model.retrying(func, env=self.env)
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 137, in retrying
+    result = func()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1921, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2168, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 329, in _dispatch
+    result = endpoint(**request.params)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 727, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 40, in call_button
+    action = call_kw(request.env[model], method, args, kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 517, in call_kw
+    result = getattr(recs, name)(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 75, in check_and_log
+    return method(self, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 477, in button_immediate_install
+    return self._button_immediate_function(self.env.registry[self._name].button_install)
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 601, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 131, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 479, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 363, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 184, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/uniacme_votaciones/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/uniacme_votaciones/models/__init__.py", line 3, in <module>
+    from . import models
+  File "/mnt/extra-addons/uniacme_votaciones/models/models.py", line 22, in <module>
+    class UniversityStudent(models.Model):
+  File "/mnt/extra-addons/uniacme_votaciones/models/models.py", line 35, in UniversityStudent
+    @api.model
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 429, in model
+    return model_create_single(method)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 466, in model_create_single
+    warnings.warn(
+ 
+2024-11-06 15:53:03,899 1 INFO db-uniacme odoo.modules.registry: module uniacme_votaciones: creating or updating database tables 
+2024-11-06 15:53:04,102 1 INFO db-uniacme odoo.modules.loading: loading uniacme_votaciones/security/ir.model.access.csv 
+2024-11-06 15:53:04,124 1 INFO db-uniacme odoo.modules.loading: loading uniacme_votaciones/views/views.xml 
+2024-11-06 15:53:04,211 1 INFO db-uniacme odoo.modules.loading: Module uniacme_votaciones: loading demo 
+2024-11-06 15:53:04,212 1 INFO db-uniacme odoo.modules.loading: loading uniacme_votaciones/demo/demo.xml 
+2024-11-06 15:53:04,254 1 INFO db-uniacme odoo.modules.loading: Module uniacme_votaciones loaded in 0.45s, 402 queries (+402 other) 
+2024-11-06 15:53:04,255 1 INFO db-uniacme odoo.modules.loading: 13 modules loaded in 0.45s, 402 queries (+402 extra) 
+2024-11-06 15:53:04,483 1 INFO db-uniacme odoo.modules.loading: Modules loaded. 
+2024-11-06 15:53:04,487 1 INFO db-uniacme odoo.modules.registry: Registry changed, signaling through the database 
+2024-11-06 15:53:04,488 1 INFO db-uniacme odoo.modules.registry: Registry loaded in 1.237s 
+2024-11-06 15:53:04,489 1 INFO db-uniacme odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-11-06 15:53:04,493 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:04] "POST /web/dataset/call_button/ir.module.module/button_immediate_install HTTP/1.1" 200 - 2437 0.716 1.139
+2024-11-06 15:53:04,494 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-11-06 15:53:04,521 1 INFO db-uniacme odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-11-06 15:53:04,592 1 WARNING db-uniacme odoo.modules.module: Missing `license` key in manifest for 'uniacme_votaciones', defaulting to LGPL-3 
+2024-11-06 15:53:04,707 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:04] "GET /odoo HTTP/1.1" 200 - 73 0.021 0.166
+2024-11-06 15:53:04,839 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:04] "GET /bus/websocket_worker_bundle?v=18.0-1 HTTP/1.1" 304 - 4 0.003 0.006
+2024-11-06 15:53:04,887 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:04] "POST /web/action/load HTTP/1.1" 200 - 11 0.006 0.019
+2024-11-06 15:53:04,892 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:04] "GET /websocket?version=18.0-1 HTTP/1.1" 101 - 1 0.002 0.019
+2024-11-06 15:53:04,895 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:04] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.007 0.023
+2024-11-06 15:53:04,898 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:04] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.009 0.025
+2024-11-06 15:53:04,924 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:04] "POST /web/dataset/call_kw/votaciones.candidate/get_views HTTP/1.1" 200 - 22 0.008 0.010
+2024-11-06 15:53:04,940 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:04] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.003
+2024-11-06 15:53:04,945 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:04] "POST /web/dataset/call_kw/votaciones.candidate/web_search_read HTTP/1.1" 200 - 6 0.003 0.006
+2024-11-06 15:53:07,777 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:07] "POST /web/action/load HTTP/1.1" 200 - 9 0.003 0.004
+2024-11-06 15:53:07,796 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:07] "POST /web/dataset/call_kw/voting.student/get_views HTTP/1.1" 200 - 9 0.003 0.006
+2024-11-06 15:53:07,809 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:07] "POST /web/dataset/call_kw/voting.student/onchange HTTP/1.1" 200 - 2 0.001 0.003
+2024-11-06 15:53:11,123 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:11] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.005
+2024-11-06 15:53:11,154 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:11] "POST /web/dataset/call_kw/university.voting/get_views HTTP/1.1" 200 - 17 0.006 0.010
+2024-11-06 15:53:11,167 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:11] "POST /web/dataset/call_kw/university.voting/web_search_read HTTP/1.1" 200 - 4 0.001 0.003
+2024-11-06 15:53:12,473 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:12] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.005
+2024-11-06 15:53:12,499 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:12] "POST /web/dataset/call_kw/votaciones.candidate/get_views HTTP/1.1" 200 - 4 0.002 0.005
+2024-11-06 15:53:12,522 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:12] "GET /web/bundle/web.assets_backend_lazy?lang=en_US HTTP/1.1" 200 - 7 0.002 0.012
+2024-11-06 15:53:12,541 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:12] "POST /web/dataset/call_kw/votaciones.candidate/read_group HTTP/1.1" 200 - 2 0.001 0.002
+2024-11-06 15:53:12,550 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:12] "POST /web/dataset/call_kw/votaciones.candidate/read_group HTTP/1.1" 200 - 2 0.001 0.002
+2024-11-06 15:53:15,473 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:15] "POST /web/dataset/call_kw/voting.student/onchange HTTP/1.1" 200 - 1 0.001 0.002
+2024-11-06 15:53:16,166 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:16] "POST /web/dataset/call_kw/university.voting/name_search HTTP/1.1" 200 - 2 0.001 0.002
+2024-11-06 15:53:18,685 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:18] "POST /web/dataset/call_kw/university.voting/web_search_read HTTP/1.1" 200 - 3 0.001 0.003
+2024-11-06 15:53:20,601 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:20] "POST /web/dataset/call_kw/university.voting/web_read HTTP/1.1" 200 - 7 0.003 0.004
+2024-11-06 15:53:21,409 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:21] "POST /web/dataset/call_kw/university.voting/web_save HTTP/1.1" 200 - 10 0.003 0.008
+2024-11-06 15:53:23,120 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:23] "POST /web/dataset/call_kw/voting.student/onchange HTTP/1.1" 200 - 1 0.001 0.002
+2024-11-06 15:53:23,910 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:23] "POST /web/dataset/call_kw/university.voting/name_search HTTP/1.1" 200 - 2 0.001 0.002
+2024-11-06 15:53:24,958 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:24] "POST /web/dataset/call_kw/university.student/name_search HTTP/1.1" 200 - 2 0.001 0.002
+2024-11-06 15:53:26,830 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:26] "POST /web/dataset/call_kw/votaciones.candidate/name_search HTTP/1.1" 200 - 3 0.001 0.002
+2024-11-06 15:53:30,228 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:30] "POST /web/dataset/call_kw/voting.student/web_save HTTP/1.1" 200 - 10 0.003 0.005
+2024-11-06 15:53:30,246 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:30] "POST /web/dataset/call_button/voting.student/cast_vote HTTP/1.1" 200 - 9 0.003 0.006
+2024-11-06 15:53:34,142 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:34] "POST /web/dataset/call_kw/votaciones.candidate/read_group HTTP/1.1" 200 - 2 0.001 0.002
+2024-11-06 15:53:34,152 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:34] "POST /web/dataset/call_kw/votaciones.candidate/read_group HTTP/1.1" 200 - 2 0.001 0.002
+2024-11-06 15:53:36,113 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:36] "POST /web/dataset/call_kw/votaciones.candidate/get_views HTTP/1.1" 200 - 5 0.002 0.006
+2024-11-06 15:53:36,128 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:36] "POST /web/dataset/call_kw/votaciones.candidate/web_search_read HTTP/1.1" 200 - 4 0.002 0.004
+2024-11-06 15:53:40,464 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:40] "POST /web/dataset/call_kw/voting.student/onchange HTTP/1.1" 200 - 1 0.001 0.002
+2024-11-06 15:53:50,607 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:50] "POST /web/dataset/call_kw/voting.student/onchange HTTP/1.1" 200 - 1 0.001 0.003
+2024-11-06 15:53:52,920 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:52] "POST /web/dataset/call_kw/university.voting/web_search_read HTTP/1.1" 200 - 3 0.001 0.004
+2024-11-06 15:53:59,243 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:53:59] "POST /web/dataset/call_kw/university.voting/web_read HTTP/1.1" 200 - 7 0.004 0.005
+2024-11-06 15:53:59,393 1 INFO db-uniacme odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2024-11-06 15:53:59,412 1 INFO db-uniacme odoo.addons.base.models.ir_attachment: filestore gc 58 checked, 0 removed 
+2024-11-06 15:53:59,446 1 INFO db-uniacme odoo.addons.base.models.res_users: GC'd 1 user log entries 
+2024-11-06 15:53:59,462 1 INFO db-uniacme odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2024-11-06 15:53:59,466 1 INFO db-uniacme odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2024-11-06 15:53:59,467 1 INFO db-uniacme odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2024-11-06 15:53:59,478 1 INFO db-uniacme odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2024-11-06 15:53:59,489 1 INFO db-uniacme odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.095s 
+2024-11-06 15:53:59,492 1 INFO db-uniacme odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2024-11-06 15:53:59,495 1 INFO db-uniacme odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2024-11-06 15:53:59,501 1 INFO db-uniacme odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) starting 
+2024-11-06 15:53:59,505 1 INFO db-uniacme odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) done in 0.003s 
+2024-11-06 15:53:59,508 1 INFO db-uniacme odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) processed 0 records, 0 records remaining 
+2024-11-06 15:53:59,511 1 INFO db-uniacme odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) completed 
+2024-11-06 15:54:00,037 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:00] "POST /web/dataset/call_kw/university.voting/web_save HTTP/1.1" 200 - 9 0.002 0.005
+2024-11-06 15:54:02,051 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:02] "POST /web/dataset/call_kw/voting.student/onchange HTTP/1.1" 200 - 1 0.001 0.002
+2024-11-06 15:54:07,441 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:07] "POST /web/dataset/call_kw/voting.student/onchange HTTP/1.1" 200 - 1 0.001 0.003
+2024-11-06 15:54:07,977 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:07] "POST /web/dataset/call_kw/university.voting/name_search HTTP/1.1" 200 - 2 0.001 0.004
+2024-11-06 15:54:08,662 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:08] "POST /web/dataset/call_kw/university.voting/name_search HTTP/1.1" 200 - 2 0.001 0.002
+2024-11-06 15:54:09,414 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:09] "POST /web/dataset/call_kw/university.student/name_search HTTP/1.1" 200 - 2 0.001 0.002
+2024-11-06 15:54:10,663 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:10] "POST /web/dataset/call_kw/votaciones.candidate/name_search HTTP/1.1" 200 - 3 0.001 0.002
+2024-11-06 15:54:11,849 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:11] "POST /web/dataset/call_kw/voting.student/web_save HTTP/1.1" 200 - 7 0.002 0.005
+2024-11-06 15:54:11,863 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:11] "POST /web/dataset/call_button/voting.student/cast_vote HTTP/1.1" 200 - 9 0.002 0.004
+2024-11-06 15:54:13,570 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:13] "POST /web/dataset/call_kw/voting.student/onchange HTTP/1.1" 200 - 1 0.000 0.002
+2024-11-06 15:54:16,221 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:16] "POST /web/dataset/call_kw/votaciones.candidate/read_group HTTP/1.1" 200 - 2 0.001 0.002
+2024-11-06 15:54:16,232 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:16] "POST /web/dataset/call_kw/votaciones.candidate/read_group HTTP/1.1" 200 - 2 0.001 0.002
+2024-11-06 15:54:21,519 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:21] "POST /web/dataset/call_kw/voting.student/onchange HTTP/1.1" 200 - 1 0.001 0.002
+2024-11-06 15:54:22,590 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:22] "POST /web/dataset/call_kw/university.voting/name_search HTTP/1.1" 200 - 2 0.001 0.003
+2024-11-06 15:54:23,701 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:23] "POST /web/dataset/call_kw/university.student/name_search HTTP/1.1" 200 - 2 0.001 0.002
+2024-11-06 15:54:24,406 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:24] "POST /web/dataset/call_kw/votaciones.candidate/name_search HTTP/1.1" 200 - 3 0.001 0.003
+2024-11-06 15:54:25,886 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:25] "POST /web/dataset/call_kw/votaciones.candidate/name_search HTTP/1.1" 200 - 3 0.001 0.003
+2024-11-06 15:54:26,755 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:26] "POST /web/dataset/call_kw/voting.student/web_save HTTP/1.1" 200 - 7 0.002 0.005
+2024-11-06 15:54:26,772 1 WARNING db-uniacme odoo.http: Este estudiante ya ha votado en este proceso de votación. 
+2024-11-06 15:54:26,773 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:54:26] "POST /web/dataset/call_button/voting.student/cast_vote HTTP/1.1" 200 - 3 0.001 0.006
+2024-11-06 15:55:38,170 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:55:38] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.005
+2024-11-06 15:55:38,227 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:55:38] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 50 0.013 0.024
+2024-11-06 15:55:38,243 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:55:38] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.006
+2024-11-06 15:55:38,271 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:55:38] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 50 0.019 0.014
+2024-11-06 15:55:38,281 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:55:38] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.039
+2024-11-06 15:56:30,000 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:30] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 47 0.013 0.012
+2024-11-06 15:56:30,014 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:30] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.004
+2024-11-06 15:56:35,656 1 INFO db-uniacme odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['uniacme_votaciones'] to user cristianjr1292@gmail.com #2 via 172.18.0.1 
+2024-11-06 15:56:35,657 1 INFO db-uniacme odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['uniacme_votaciones'] to user cristianjr1292@gmail.com #2 via 172.18.0.1 
+2024-11-06 15:56:35,658 1 INFO db-uniacme odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['uniacme_votaciones'] to user cristianjr1292@gmail.com #2 via 172.18.0.1 
+2024-11-06 15:56:36,263 1 INFO db-uniacme odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user cristianjr1292@gmail.com #2 via 172.18.0.1 
+2024-11-06 15:56:36,297 1 INFO db-uniacme odoo.modules.loading: loading 1 modules... 
+2024-11-06 15:56:36,305 1 INFO db-uniacme odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-11-06 15:56:36,327 1 INFO db-uniacme odoo.modules.loading: updating modules list 
+2024-11-06 15:56:36,329 1 INFO db-uniacme odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.18.0.1 
+2024-11-06 15:56:36,945 1 INFO db-uniacme odoo.modules.loading: loading 13 modules... 
+2024-11-06 15:56:36,950 1 INFO db-uniacme odoo.modules.loading: Loading module uniacme_votaciones (8/13) 
+2024-11-06 15:56:36,990 1 INFO db-uniacme odoo.modules.registry: module uniacme_votaciones: creating or updating database tables 
+2024-11-06 15:56:37,030 1 INFO db-uniacme odoo.modules.loading: loading uniacme_votaciones/security/ir.model.access.csv 
+2024-11-06 15:56:37,049 1 INFO db-uniacme odoo.modules.loading: loading uniacme_votaciones/views/views.xml 
+2024-11-06 15:56:37,133 1 INFO db-uniacme odoo.modules.loading: Module uniacme_votaciones: loading demo 
+2024-11-06 15:56:37,134 1 INFO db-uniacme odoo.modules.loading: loading uniacme_votaciones/demo/demo.xml 
+2024-11-06 15:56:37,166 1 INFO db-uniacme odoo.modules.loading: Module uniacme_votaciones loaded in 0.22s, 302 queries (+302 other) 
+2024-11-06 15:56:37,170 1 INFO db-uniacme odoo.modules.loading: 13 modules loaded in 0.22s, 302 queries (+302 extra) 
+2024-11-06 15:56:37,260 1 INFO db-uniacme odoo.modules.registry: verifying fields for every extended model 
+2024-11-06 15:56:37,447 1 INFO db-uniacme odoo.modules.loading: Modules loaded. 
+2024-11-06 15:56:37,450 1 INFO db-uniacme odoo.modules.registry: Registry changed, signaling through the database 
+2024-11-06 15:56:37,451 1 INFO db-uniacme odoo.modules.registry: Registry loaded in 1.160s 
+2024-11-06 15:56:37,452 1 INFO db-uniacme odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2024-11-06 15:56:37,455 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:37] "POST /web/dataset/call_button/ir.module.module/button_immediate_upgrade HTTP/1.1" 200 - 3862 1.048 0.755
+2024-11-06 15:56:37,487 1 INFO db-uniacme odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-11-06 15:56:37,646 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:37] "GET /odoo HTTP/1.1" 200 - 76 0.021 0.140
+2024-11-06 15:56:37,838 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:37] "GET /bus/websocket_worker_bundle?v=18.0-1 HTTP/1.1" 304 - 4 0.002 0.006
+2024-11-06 15:56:37,875 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:37] "POST /web/action/load HTTP/1.1" 200 - 11 0.009 0.006
+2024-11-06 15:56:37,875 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:37] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.007 0.011
+2024-11-06 15:56:37,877 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:37] "GET /websocket?version=18.0-1 HTTP/1.1" 101 - 1 0.002 0.004
+2024-11-06 15:56:37,910 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:37] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.003 0.005
+2024-11-06 15:56:37,919 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:37] "POST /web/dataset/call_kw/votaciones.candidate/get_views HTTP/1.1" 200 - 21 0.009 0.014
+2024-11-06 15:56:37,937 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:37] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.003
+2024-11-06 15:56:37,940 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:37] "POST /web/dataset/call_kw/votaciones.candidate/web_search_read HTTP/1.1" 200 - 6 0.003 0.005
+2024-11-06 15:56:45,791 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:45] "POST /web/action/load HTTP/1.1" 200 - 9 0.003 0.005
+2024-11-06 15:56:45,827 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:45] "POST /web/dataset/call_kw/university.campus/get_views HTTP/1.1" 200 - 14 0.004 0.008
+2024-11-06 15:56:45,839 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:45] "POST /web/dataset/call_kw/university.campus/web_search_read HTTP/1.1" 200 - 3 0.001 0.002
+2024-11-06 15:56:48,261 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:48] "POST /web/dataset/call_kw/university.campus/onchange HTTP/1.1" 200 - 2 0.001 0.003
+2024-11-06 15:56:53,569 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:53] "POST /web/action/load HTTP/1.1" 200 - 9 0.003 0.005
+2024-11-06 15:56:53,594 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:53] "POST /web/dataset/call_kw/university.student/get_views HTTP/1.1" 200 - 12 0.004 0.008
+2024-11-06 15:56:53,606 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:53] "POST /web/dataset/call_kw/university.student/web_search_read HTTP/1.1" 200 - 3 0.001 0.003
+2024-11-06 15:56:57,059 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:57] "POST /web/dataset/call_kw/votaciones.candidate/web_search_read HTTP/1.1" 200 - 4 0.001 0.003
+2024-11-06 15:56:58,424 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:58] "POST /web/dataset/call_kw/votaciones.candidate/onchange HTTP/1.1" 200 - 3 0.002 0.004
+2024-11-06 15:56:59,213 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:56:59] "POST /web/dataset/call_kw/university.student/name_search HTTP/1.1" 200 - 2 0.001 0.002
+2024-11-06 15:57:02,174 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:02] "POST /web/dataset/call_kw/university.student/web_search_read HTTP/1.1" 200 - 3 0.001 0.004
+2024-11-06 15:57:04,601 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:04] "POST /web/dataset/call_kw/votaciones.candidate/web_search_read HTTP/1.1" 200 - 4 0.001 0.004
+2024-11-06 15:57:08,962 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:08] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.005
+2024-11-06 15:57:08,982 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:08] "POST /web/dataset/call_kw/votaciones.import.wizard/get_views HTTP/1.1" 200 - 7 0.002 0.005
+2024-11-06 15:57:08,993 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:08] "POST /web/dataset/call_kw/votaciones.import.wizard/onchange HTTP/1.1" 200 - 2 0.001 0.002
+2024-11-06 15:57:13,473 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:13] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.005
+2024-11-06 15:57:13,495 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:13] "POST /web/dataset/call_kw/votaciones.candidate/get_views HTTP/1.1" 200 - 4 0.002 0.006
+2024-11-06 15:57:13,518 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:13] "GET /web/bundle/web.assets_backend_lazy?lang=en_US HTTP/1.1" 200 - 7 0.002 0.013
+2024-11-06 15:57:13,532 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:13] "POST /web/dataset/call_kw/votaciones.candidate/read_group HTTP/1.1" 200 - 2 0.001 0.002
+2024-11-06 15:57:13,543 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:13] "POST /web/dataset/call_kw/votaciones.candidate/read_group HTTP/1.1" 200 - 2 0.001 0.002
+2024-11-06 15:57:19,546 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:19] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.005
+2024-11-06 15:57:19,576 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:19] "POST /web/dataset/call_kw/university.voting/get_views HTTP/1.1" 200 - 15 0.006 0.010
+2024-11-06 15:57:19,588 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:19] "POST /web/dataset/call_kw/university.voting/web_search_read HTTP/1.1" 200 - 4 0.002 0.003
+2024-11-06 15:57:25,793 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:25] "POST /web/action/load HTTP/1.1" 200 - 9 0.003 0.004
+2024-11-06 15:57:25,811 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:25] "POST /web/dataset/call_kw/voting.student/get_views HTTP/1.1" 200 - 8 0.003 0.006
+2024-11-06 15:57:25,822 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:25] "POST /web/dataset/call_kw/voting.student/onchange HTTP/1.1" 200 - 2 0.001 0.002
+2024-11-06 15:57:26,773 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:26] "POST /web/dataset/call_kw/university.voting/name_search HTTP/1.1" 200 - 2 0.001 0.003
+2024-11-06 15:57:28,037 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:28] "POST /web/dataset/call_kw/university.student/name_search HTTP/1.1" 200 - 2 0.001 0.002
+2024-11-06 15:57:31,342 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:31] "POST /web/dataset/call_kw/votaciones.candidate/name_search HTTP/1.1" 200 - 3 0.001 0.003
+2024-11-06 15:57:32,779 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:32] "POST /web/dataset/call_kw/voting.student/web_save HTTP/1.1" 200 - 9 0.003 0.005
+2024-11-06 15:57:32,795 1 WARNING db-uniacme odoo.http: Este estudiante ya ha votado en este proceso de votación. 
+2024-11-06 15:57:32,795 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [06/Nov/2024 15:57:32] "POST /web/dataset/call_button/voting.student/cast_vote HTTP/1.1" 200 - 3 0.001 0.006
+2024-11-06 16:00:40,894 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-11-06 16:00:40,895 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-11-06 16:00:41,072 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 6 connections  
+2024-11-07 01:59:20,169 1 INFO ? odoo: Odoo version 18.0-20241029 
+2024-11-07 01:59:20,170 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2024-11-07 01:59:20,171 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/18.0', '/mnt/extra-addons'] 
+2024-11-07 01:59:20,171 1 INFO ? odoo: database: odoo@db:5432 
+2024-11-07 01:59:20,464 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2024-11-07 01:59:20,674 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2024-11-07 01:59:21,034 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on da991b1a4bd7:8069 
+2024-11-07 01:59:21,280 1 INFO db-uniacme odoo.modules.loading: loading 1 modules... 
+2024-11-07 01:59:21,322 1 INFO db-uniacme odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries (+0 extra) 
+2024-11-07 01:59:21,349 1 WARNING db-uniacme odoo.modules.module: Missing `license` key in manifest for 'uniacme_votaciones', defaulting to LGPL-3 
+2024-11-07 01:59:21,360 1 INFO db-uniacme odoo.modules.loading: loading 13 modules... 
+2024-11-07 01:59:21,710 1 WARNING db-uniacme py.warnings: /usr/lib/python3/dist-packages/odoo/api.py:466: DeprecationWarning: The model odoo.addons.uniacme_votaciones.models.models is not overriding the create method in batch
+  File "/usr/lib/python3.12/threading.py", line 1030, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 390, in handle
+    super().handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 323, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2363, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1869, in _serve_db
+    self.registry, cr_readonly = self._open_registry()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1485, in _open_registry
+    registry = Registry(self.db)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 106, in __new__
+    return cls.new(db_name)
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 131, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 475, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 363, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 184, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/uniacme_votaciones/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/uniacme_votaciones/models/__init__.py", line 3, in <module>
+    from . import models
+  File "/mnt/extra-addons/uniacme_votaciones/models/models.py", line 22, in <module>
+    class UniversityStudent(models.Model):
+  File "/mnt/extra-addons/uniacme_votaciones/models/models.py", line 35, in UniversityStudent
+    @api.model
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 429, in model
+    return model_create_single(method)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 466, in model_create_single
+    warnings.warn(
+ 
+2024-11-07 01:59:21,857 1 INFO db-uniacme odoo.modules.loading: 13 modules loaded in 0.50s, 0 queries (+0 extra) 
+2024-11-07 01:59:21,896 1 INFO db-uniacme odoo.modules.loading: Modules loaded. 
+2024-11-07 01:59:21,903 1 INFO db-uniacme odoo.modules.registry: Registry loaded in 0.728s 
+2024-11-07 01:59:21,904 1 INFO db-uniacme odoo.addons.base.models.ir_http: Generating routing map for key None 
+2024-11-07 01:59:21,927 1 INFO db-uniacme odoo.addons.base.models.res_device: User 2 inserts device log (JK2xO9vMX1JVx5UmBP9umeCfYr3OBksFravkTwnT8G) 
+2024-11-07 01:59:21,948 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:21] "GET / HTTP/1.1" 303 - 27 0.097 0.678
+2024-11-07 01:59:22,075 1 WARNING db-uniacme odoo.modules.module: Missing `license` key in manifest for 'uniacme_votaciones', defaulting to LGPL-3 
+2024-11-07 01:59:22,298 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:22] "GET /odoo HTTP/1.1" 200 - 73 0.065 0.271
+2024-11-07 01:59:22,497 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:22] "GET /bus/websocket_worker_bundle?v=18.0-1 HTTP/1.1" 304 - 4 0.003 0.004
+2024-11-07 01:59:22,543 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:22] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 17 0.013 0.012
+2024-11-07 01:59:22,553 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:22] "GET /websocket?version=18.0-1 HTTP/1.1" 101 - 1 0.001 0.006
+2024-11-07 01:59:22,871 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2024-11-07 01:59:23,830 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:23] "GET /web/image/res.partner/3/avatar_128?unique=1730926354000 HTTP/1.1" 200 - 8 0.006 1.306
+2024-11-07 01:59:23,835 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:23] "POST /web/action/load HTTP/1.1" 200 - 11 0.014 1.305
+2024-11-07 01:59:23,852 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:23] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.003 0.004
+2024-11-07 01:59:23,882 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:23] "POST /web/dataset/call_kw/votaciones.candidate/get_views HTTP/1.1" 200 - 22 0.011 0.013
+2024-11-07 01:59:23,910 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:23] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.004
+2024-11-07 01:59:23,920 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:23] "POST /web/dataset/call_kw/votaciones.candidate/web_search_read HTTP/1.1" 200 - 6 0.008 0.007
+2024-11-07 01:59:24,086 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:24] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.002
+2024-11-07 01:59:26,036 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:26] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.005
+2024-11-07 01:59:26,093 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:26] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 50 0.018 0.025
+2024-11-07 01:59:26,117 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:26] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.012
+2024-11-07 01:59:26,150 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:26] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 50 0.024 0.022
+2024-11-07 01:59:26,180 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:26] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.013 0.062
+2024-11-07 01:59:33,227 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:33] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 47 0.015 0.013
+2024-11-07 01:59:33,241 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:33] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.005
+2024-11-07 01:59:41,786 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:41] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 47 0.014 0.013
+2024-11-07 01:59:41,809 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:41] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.003 0.013
+2024-11-07 01:59:43,112 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:43] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 47 0.021 0.012
+2024-11-07 01:59:43,114 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:43] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.030
+2024-11-07 01:59:44,221 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:44] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 47 0.018 0.012
+2024-11-07 01:59:44,235 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:44] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.005
+2024-11-07 01:59:44,257 1 INFO ? werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:44] "GET /website_sale_wishlist/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2024-11-07 01:59:44,258 1 INFO ? werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:44] "GET /website_sale_comparison/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2024-11-07 01:59:49,922 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:49] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.031
+2024-11-07 01:59:49,922 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 01:59:49] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 47 0.022 0.014
+2024-11-07 02:00:03,533 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:03] "POST /web/dataset/call_kw/votaciones.candidate/web_search_read HTTP/1.1" 200 - 4 0.002 0.004
+2024-11-07 02:00:04,384 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:04] "POST /web/dataset/call_kw/votaciones.candidate/web_search_read HTTP/1.1" 200 - 4 0.001 0.003
+2024-11-07 02:00:06,135 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:06] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.005
+2024-11-07 02:00:06,165 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:06] "POST /web/dataset/call_kw/university.voting/get_views HTTP/1.1" 200 - 17 0.005 0.010
+2024-11-07 02:00:06,180 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:06] "POST /web/dataset/call_kw/university.voting/web_search_read HTTP/1.1" 200 - 4 0.003 0.003
+2024-11-07 02:00:06,606 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:06] "POST /web/action/load HTTP/1.1" 200 - 9 0.003 0.005
+2024-11-07 02:00:06,646 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:06] "POST /web/dataset/call_kw/university.student/get_views HTTP/1.1" 200 - 13 0.004 0.008
+2024-11-07 02:00:06,657 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:06] "POST /web/dataset/call_kw/university.student/web_search_read HTTP/1.1" 200 - 3 0.001 0.003
+2024-11-07 02:00:07,223 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:07] "POST /web/action/load HTTP/1.1" 200 - 9 0.003 0.005
+2024-11-07 02:00:07,252 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:07] "POST /web/dataset/call_kw/university.campus/get_views HTTP/1.1" 200 - 16 0.005 0.009
+2024-11-07 02:00:07,264 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:07] "POST /web/dataset/call_kw/university.campus/web_search_read HTTP/1.1" 200 - 3 0.001 0.002
+2024-11-07 02:00:08,588 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:08] "POST /web/dataset/call_kw/university.campus/onchange HTTP/1.1" 200 - 2 0.001 0.003
+2024-11-07 02:00:10,367 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:10] "POST /web/action/load HTTP/1.1" 200 - 9 0.003 0.005
+2024-11-07 02:00:10,390 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:10] "POST /web/dataset/call_kw/voting.student/get_views HTTP/1.1" 200 - 9 0.003 0.007
+2024-11-07 02:00:10,402 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:10] "POST /web/dataset/call_kw/voting.student/onchange HTTP/1.1" 200 - 2 0.001 0.003
+2024-11-07 02:00:13,330 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:13] "POST /web/dataset/call_kw/university.student/web_search_read HTTP/1.1" 200 - 3 0.002 0.004
+2024-11-07 02:00:16,227 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:16] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.004
+2024-11-07 02:00:16,255 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:16] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.003 0.025
+2024-11-07 02:00:16,260 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:16] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 47 0.021 0.016
+2024-11-07 02:00:18,988 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:18] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 47 0.015 0.013
+2024-11-07 02:00:19,000 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:19] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.004
+2024-11-07 02:00:22,802 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:22] "POST /web/dataset/call_kw/votaciones.candidate/web_search_read HTTP/1.1" 200 - 4 0.002 0.004
+2024-11-07 02:00:23,606 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:23] "POST /web/dataset/call_kw/votaciones.candidate/web_search_read HTTP/1.1" 200 - 4 0.001 0.004
+2024-11-07 02:00:24,245 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:24] "POST /web/dataset/call_kw/university.student/web_search_read HTTP/1.1" 200 - 3 0.001 0.003
+2024-11-07 02:00:39,424 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:39] "POST /web/dataset/call_kw/university.student/web_search_read HTTP/1.1" 200 - 3 0.001 0.003
+2024-11-07 02:00:39,985 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:00:39] "POST /web/dataset/call_kw/university.campus/web_search_read HTTP/1.1" 200 - 2 0.001 0.003
+2024-11-07 02:01:53,222 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:01:53] "POST /web/dataset/call_kw/votaciones.candidate/web_search_read HTTP/1.1" 200 - 4 0.001 0.004
+2024-11-07 02:01:54,437 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:01:54] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.006
+2024-11-07 02:01:54,465 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:01:54] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.003 0.026
+2024-11-07 02:01:54,470 1 INFO db-uniacme werkzeug: 172.18.0.1 - - [07/Nov/2024 02:01:54] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 47 0.021 0.016
+2024-11-07 03:57:06,912 1 INFO ? odoo.service.server: Initiating shutdown 
+2024-11-07 03:57:06,920 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2024-11-07 03:57:07,264 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 4 connections  

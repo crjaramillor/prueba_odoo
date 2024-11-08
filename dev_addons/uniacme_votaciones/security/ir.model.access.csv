@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_university_campus_user,access_university_campus_user,model_university_campus,base.group_user,1,1,1,1
+access_university_student_user,access_university_student_user,model_university_student,base.group_user,1,1,1,1
+access_votaciones_candidate_user,access_votaciones_candidate_user,model_votaciones_candidate,base.group_user,1,1,1,1
+access_university_voting_user,access_university_voting_user,model_university_voting,base.group_user,1,1,1,1
+access_voting_student_user,access_voting_student_user,model_voting_student,base.group_user,1,1,1,1
+access_votaciones_import_wizard_user,access_votaciones_import_wizard_user,model_votaciones_import_wizard,base.group_user,1,1,1,1
